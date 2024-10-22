@@ -4,6 +4,7 @@ import exceptions.ExpressionException;
 import exceptions.StatementException;
 import model.state.PrgState;
 import model.value.IValue;
+import model.expressions.IExpression;
 
 public class AssignStatement implements IStatement {
     private String id;
