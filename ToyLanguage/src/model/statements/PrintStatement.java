@@ -1,5 +1,6 @@
 package model.statements;
 
+import exceptions.ExpressionException;
 import model.expressions.IExpression;
 import model.state.PrgState;
 import model.value.IValue;
@@ -12,7 +13,7 @@ public class PrintStatement implements IStatement {
     }
 
     @Override
-    public PrgState execute(PrgState state) {
+    public PrgState execute(PrgState state) throws ExpressionException {
         IValue val = expression.evaluate(state.getSymTable());
         state.getOutputList().add(val.toString());
         return state;

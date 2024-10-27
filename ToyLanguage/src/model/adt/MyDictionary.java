@@ -33,7 +33,7 @@ public class MyDictionary <K, V> implements MyIDictionary<K, V> {
     }
 
     @Override
-    public V get(K key) throws ExpressionException {
+    public V lookup(K key) throws ExpressionException {
         if(this.map.containsKey(key))
             return this.map.get(key);
         else

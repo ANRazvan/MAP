@@ -17,7 +17,7 @@ public class VariableExpression implements IExpression{
     @Override
     public IValue evaluate(MyIDictionary<String, IValue> symTbl) throws ExpressionException {
 
-        return symTbl.get(this.variable);
+        return symTbl.lookup(this.variable);
     }
     @Override
     public String toString()
