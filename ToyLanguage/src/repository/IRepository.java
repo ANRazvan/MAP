@@ -3,5 +3,5 @@ import model.state.PrgState;
 
 public interface IRepository {
     PrgState getCrtPrg();
-    // void addPrgState(PrgState state);
+    void addPrgState(PrgState state);
 }

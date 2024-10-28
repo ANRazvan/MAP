@@ -2,22 +2,22 @@ package model.state;
 import model.adt.MyStack;
 import model.adt.MyDictionary;
 import model.adt.MyList;
-import model.statements.IStatement;
+import model.statements.IStmt;
 import model.value.IValue;
 
 public class PrgState {
-    private MyStack<IStatement> execStack;
+    private MyStack<IStmt> execStack;
     private MyDictionary<String, IValue>  symTable;
     private MyList<String> outputList;
 
-    public PrgState(IStatement initState, MyStack<IStatement> execStack, MyDictionary<String, IValue> symTable) {
+    public PrgState(IStmt initState, MyStack<IStmt> execStack, MyDictionary<String, IValue> symTable) {
         this.execStack = execStack;
         this.symTable = symTable;
         outputList = new MyList<>();
         execStack.push(initState);
     }
 
-    public MyStack<IStatement> getExecStack() {
+    public MyStack<IStmt> getExecStack() {
         return execStack;
     }
     public MyDictionary<String, IValue> getSymTable() {

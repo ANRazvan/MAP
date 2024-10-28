@@ -3,7 +3,7 @@ import exceptions.ExpressionException;
 import exceptions.StatementException;
 import model.state.PrgState;
 
-public interface IStatement {
+public interface IStmt {
     PrgState execute(PrgState state) throws StatementException, ExpressionException;
 
 }

@@ -40,7 +40,7 @@ public class MyDictionary <K, V> implements MyIDictionary<K, V> {
             throw new ExpressionException("Key not found");
     }
 
-    public String toSting() {
+    public String toString() {
         StringBuilder st = new StringBuilder();
         this.map.forEach((k,v)->{
             st.append(k).append(" -> ").append(v).append("\n");

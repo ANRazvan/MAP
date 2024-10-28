@@ -16,11 +16,9 @@ public class Repository implements IRepository {
         return prgStates.get(0); // returning the first PrgState for now
     }
 
-    /*
     public void addPrgState(PrgState state) {
         prgStates.add(state);
     }
-    */
 
 
 }

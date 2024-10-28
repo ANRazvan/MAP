@@ -2,11 +2,11 @@ package model.statements;
 
 import model.state.PrgState;
 
-public class CompStatement implements IStatement {
-    private IStatement first;
-    private IStatement second;
+public class CompStmt implements IStmt {
+    private IStmt first;
+    private IStmt second;
 
-    public CompStatement(IStatement first, IStatement second) {
+    public CompStmt(IStmt first, IStmt second) {
         this.first = first;
         this.second = second;
     }

@@ -5,10 +5,10 @@ import model.expressions.IExpression;
 import model.state.PrgState;
 import model.value.IValue;
 
-public class PrintStatement implements IStatement {
+public class PrintStmt implements IStmt {
     private IExpression expression;
 
-    public PrintStatement(IExpression expression) {
+    public PrintStmt(IExpression expression) {
         this.expression = expression;
     }
 

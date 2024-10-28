@@ -2,20 +2,20 @@ package model.state;
 
 import exceptions.EmptyStackException;
 import model.adt.MyStack;
-import model.statements.IStatement;
+import model.statements.IStmt;
 
 public class ExecState implements IExecStack {
-    private MyStack<IStatement> stack;
+    private MyStack<IStmt> stack;
     public ExecState() {
         stack = new MyStack<>();
     }
 
     @Override
-    public void push(IStatement statement) {
+    public void push(IStmt statement) {
         this.stack.push(statement);
     }
 
-    public IStatement pop() throws EmptyStackException {
+    public IStmt pop() throws EmptyStackException {
         return this.stack.pop();
     }
 
@@ -33,7 +33,7 @@ public class ExecState implements IExecStack {
         return super.toString();
     }
 
-    public MyStack<IStatement> getStack() {
+    public MyStack<IStmt> getStack() {
         return this.stack;
     }
 }

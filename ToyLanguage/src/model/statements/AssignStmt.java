@@ -6,10 +6,10 @@ import model.state.PrgState;
 import model.value.IValue;
 import model.expressions.IExpression;
 
-public class AssignStatement implements IStatement {
+public class AssignStmt implements IStmt {
     private String id;
     private IExpression expression;
-    public AssignStatement(String id, IExpression expression) {
+    public AssignStmt(String id, IExpression expression) {
         this.id = id;
         this.expression = expression;
     }
