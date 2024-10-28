@@ -15,16 +15,16 @@ public class Controller {
         this.repo = repo;
     }
 
-    public PrgState oneStep(PrgState state) throws MyException, EmptyStackException, StatementException, ExpressionException {
+    public PrgState oneStep(PrgState state) throws EmptyStackException, StatementException, ExpressionException {
         MyIStack<IStatement> stack = state.getExecStack();
         if (stack.isEmpty()) {
-            throw new MyException("Stack is empty");
+            throw new EmptyStackException("The stack is empty!");
         }
         IStatement currentStmt = stack.pop();
         return currentStmt.execute(state);
     }
 
-    public void allStep() throws MyException, EmptyStackException, StatementException, ExpressionException {
+    public void allStep() throws Exception {
         PrgState prg = repo.getCrtPrg(); // repo is the controller field of type MyIRepo
         this.displayPrgState();
         while (!prg.getExecStack().isEmpty()) {
