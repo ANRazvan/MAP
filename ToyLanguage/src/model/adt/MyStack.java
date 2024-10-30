@@ -42,7 +42,6 @@ public class MyStack<T> implements MyIStack<T> {
             str.append("\n");
         }
 
-
         return "Stack contains: " + str.toString();
     }
 }

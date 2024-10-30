@@ -19,6 +19,10 @@ public class BoolValue implements IValue{
         return other.getType() instanceof BoolType && ((BoolValue)other).getValue() == getValue();
     }
 
+    public IValue deepcopy(){
+        return new BoolValue(value);
+    }
+
     public String toString(){
         return Boolean.toString(value);
     }

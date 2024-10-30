@@ -13,6 +13,9 @@ public class VariableExpression implements IExpression{
 
     }
 
+    public IExpression deepcopy(){
+        return new VariableExpression(new String(variable));
+    }
 
     @Override
     public IValue evaluate(MyIDictionary<String, IValue> symTbl) throws ExpressionException {

@@ -9,10 +9,16 @@ import model.expressions.IExpression;
 public class AssignStmt implements IStmt {
     private String id;
     private IExpression expression;
+
     public AssignStmt(String id, IExpression expression) {
         this.id = id;
         this.expression = expression;
     }
+
+    public IStmt deepcopy(){
+        return new AssignStmt(new String(id),expression.deepcopy());
+    }
+
     public String toString(){
         return id + "=" + expression;
     }

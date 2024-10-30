@@ -19,6 +19,10 @@ public class ArithmeticalExpression implements IExpression {
         this.operation = operation;
     }
 
+    public IExpression deepcopy(){
+        return new ArithmeticalExpression(left.deepcopy(),right.deepcopy(),operation);
+    }
+
     @Override
     public IValue evaluate(MyIDictionary<String, IValue> symTbl) throws ExpressionException {
 

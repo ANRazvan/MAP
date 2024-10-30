@@ -12,6 +12,10 @@ public class ValueExpression implements IExpression {
         this.value = value;
     }
 
+    public IExpression deepcopy(){
+        return new ValueExpression(value.deepcopy());
+    }
+
     @Override
     public IValue evaluate(MyIDictionary<String, IValue> symTbl) {
         return this.value;

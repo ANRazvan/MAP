@@ -20,6 +20,11 @@ public class LogicalExpression implements IExpression{
     public String toString(){
         return left.toString() + " " + operation.toString().toLowerCase() + " " + right.toString();
     }
+
+    public IExpression deepcopy(){
+        return new LogicalExpression(left.deepcopy(),operation,right.deepcopy());
+    }
+
     public IValue evaluate(MyIDictionary<String, IValue> symTable) throws ExpressionException {
         IValue left = this.left.evaluate(symTable);
         IValue right = this.right.evaluate(symTable);

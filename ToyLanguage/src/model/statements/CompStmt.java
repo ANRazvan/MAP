@@ -6,6 +6,10 @@ public class CompStmt implements IStmt {
     private IStmt first;
     private IStmt second;
 
+    public IStmt deepcopy(){
+        return new CompStmt(first.deepcopy(),second.deepcopy());
+    }
+
     public CompStmt(IStmt first, IStmt second) {
         this.first = first;
         this.second = second;

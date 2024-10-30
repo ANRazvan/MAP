@@ -19,6 +19,10 @@ public class PrintStmt implements IStmt {
         return state;
     }
 
+    public IStmt deepcopy(){
+        return new PrintStmt(expression.deepcopy());
+    }
+
     @Override
     public String toString() {
         return "print(" +this.expression.toString()+")";

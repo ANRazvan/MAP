@@ -13,6 +13,9 @@ public class IntType implements IType{
         return "int";
     }
 
-
     public IValue getDefaultValue() { return new IntValue(0); }
+
+    public IType deepcopy(){
+        return new IntType();
+    }
 }

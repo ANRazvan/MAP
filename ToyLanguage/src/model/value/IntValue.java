@@ -22,6 +22,10 @@ public class IntValue implements IValue{
         return obj.getType() instanceof IntType &&((IntValue)obj).getValue()==this.getValue();
     }
 
+    public IValue deepcopy(){
+        return new IntValue(number);
+    }
+
     public String toString(){
         return Integer.toString(number);
     }

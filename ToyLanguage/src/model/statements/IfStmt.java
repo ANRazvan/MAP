@@ -20,9 +20,10 @@ public class IfStmt implements IStmt {
     public PrgState execute(PrgState state) throws StatementException, ExpressionException {
 
         IValue val = condition.evaluate(state.getSymTable());
-        if(!val.getType().equals(new BoolType())){
+        if(!val.getType().equals(new BoolType())) {
             throw new StatementException("The condition is not a boolean");
         }
+
         if(((BoolValue)val).getValue())
         {
             state.getExecStack().push(thenStatement);
@@ -31,6 +32,11 @@ public class IfStmt implements IStmt {
             state.getExecStack().push(elseStatement);
         return state;
     }
+
+    public IStmt deepcopy(){
+        return new IfStmt(condition.deepcopy(),thenStatement.deepcopy(),elseStatement.deepcopy());
+    }
+
     public String toString() {
         return "IF("+ condition.toString()+") THEN{" +thenStatement.toString() +"}ELSE{"+elseStatement.toString()+"}";
     }

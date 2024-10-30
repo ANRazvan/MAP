@@ -7,4 +7,6 @@ import model.state.PrgState;
 
 public interface IExpression {
     IValue evaluate(MyIDictionary<String, IValue> symTbl) throws ExpressionException;
+
+    IExpression deepcopy();
 }

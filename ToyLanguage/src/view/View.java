@@ -9,6 +9,8 @@ import model.expressions.*;
 import model.type.*;
 import model.value.*;
 
+import java.util.Scanner;
+
 
 public class View {
     private Controller controller;
@@ -29,9 +31,19 @@ public class View {
 
     public void run() {
         try {
-            controller.allStep();
+            Scanner scanner = new Scanner(System.in);
+            int option = scanner.nextInt();
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
+
+    public void printMenu(){
+        System.out.println("1. Run an existing program// Input program");
+        System.out.println("2. Execute a program");
+        System.out.println("0. Exit");
+    }
+
+
 }

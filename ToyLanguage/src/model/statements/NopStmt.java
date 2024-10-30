@@ -10,6 +10,10 @@ public class NopStmt implements IStmt {
         return null;
     }
 
+    public IStmt deepcopy(){
+        return new NopStmt();
+    }
+
     @Override
     public String toString() {
         return "NopStatement";

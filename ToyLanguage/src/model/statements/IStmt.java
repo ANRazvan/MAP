@@ -5,5 +5,5 @@ import model.state.PrgState;
 
 public interface IStmt {
     PrgState execute(PrgState state) throws StatementException, ExpressionException;
-
+    IStmt deepcopy();
 }

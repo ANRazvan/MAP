@@ -13,6 +13,9 @@ public class BoolType implements IType {
         return "bool";
     }
 
+    public IType deepcopy(){
+        return new BoolType();
+    }
 
     public IValue getDefaultValue() { return new BoolValue(false); }
 }
