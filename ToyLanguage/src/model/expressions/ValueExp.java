@@ -1,19 +1,16 @@
 package model.expressions;
 
 import model.adt.MyIDictionary;
-import model.state.PrgState;
 import model.value.IValue;
 
-import java.beans.Expression;
-
-public class ValueExpression implements IExpression {
+public class ValueExp implements IExpression {
     private IValue value;
-    public ValueExpression(IValue value) {
+    public ValueExp(IValue value) {
         this.value = value;
     }
 
     public IExpression deepcopy(){
-        return new ValueExpression(value.deepcopy());
+        return new ValueExp(value.deepcopy());
     }
 
     @Override

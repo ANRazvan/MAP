@@ -1,5 +1,5 @@
 package model.expressions;
 
-public enum LogicalOperation {
+public enum LogicalOp {
     AND, OR
 }

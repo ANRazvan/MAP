@@ -1,6 +1,7 @@
 package controller;
 import exceptions.EmptyStackException;
 import exceptions.ExpressionException;
+import exceptions.MyException;
 import exceptions.StatementException;
 import model.adt.MyIStack;
 import model.state.PrgState;
@@ -14,7 +15,7 @@ public class Controller {
         this.repo = repo;
     }
 
-    public PrgState oneStep(PrgState state) throws EmptyStackException, StatementException, ExpressionException {
+    public PrgState oneStep(PrgState state) throws MyException {
         MyIStack<IStmt> stack = state.getExecStack();
         if (stack.isEmpty()) {
             throw new EmptyStackException("The stack is empty!");
@@ -23,16 +24,21 @@ public class Controller {
         return currentStmt.execute(state);
     }
 
-    public void allStep() throws EmptyStackException, StatementException, ExpressionException {
+    public void allStep() throws MyException {
         PrgState prg = repo.getCrtPrg(); // repo is the controller field of type MyIRepo
         this.displayPrgState();
         while (!prg.getExecStack().isEmpty()) {
             oneStep(prg);
             this.displayPrgState();
         }
+        repo.removePrgState();
     }
 
     public void displayPrgState() {
         System.out.println(repo.getCrtPrg());
+    }
+
+    public IRepository getRepo() {
+        return repo;
     }
 }

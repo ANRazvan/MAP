@@ -1,6 +1,6 @@
 package model.expressions;
 
-public enum ArithmeticalOperation {
+public enum ArithOp {
     PLUS,
     MINUS,
     MULTIPLY,

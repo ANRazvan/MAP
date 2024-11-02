@@ -13,7 +13,10 @@ public class Repository implements IRepository {
     }
 
     public PrgState getCrtPrg() {
-        return prgStates.get(0); // returning the first PrgState for now
+        return prgStates.getFirst();     }
+
+    public void removePrgState() {
+        prgStates.removeFirst();
     }
 
     public void addPrgState(PrgState state) {

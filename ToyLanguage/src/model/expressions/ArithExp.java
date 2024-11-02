@@ -6,21 +6,46 @@ import model.type.IntType;
 import model.value.IValue;
 import model.value.IntValue;
 
-public class ArithmeticalExpression implements IExpression {
+public class ArithExp implements IExpression {
 
     private IExpression left;
     private IExpression right;
-    private ArithmeticalOperation operation;
+    private ArithOp operation;
 
-    public ArithmeticalExpression(IExpression left, IExpression right,
-                                  ArithmeticalOperation operation){
+    public ArithExp(char operation, IExpression left, IExpression right){
+        this.left = left;
+        this.right = right;
+        switch(operation){
+            case '+' -> {
+                this.operation = ArithOp.PLUS;
+            }
+
+            case '-' -> {
+                this.operation = ArithOp.MINUS;
+            }
+
+            case '*' -> {
+                this.operation = ArithOp.MULTIPLY;
+            }
+
+            case '/' -> {
+                this.operation = ArithOp.DIVIDE;
+            }
+
+            default -> {
+                this.operation = null;
+            }
+        }
+    }
+
+    public ArithExp(ArithOp operation,IExpression left, IExpression right){
         this.left = left;
         this.right = right;
         this.operation = operation;
     }
 
     public IExpression deepcopy(){
-        return new ArithmeticalExpression(left.deepcopy(),right.deepcopy(),operation);
+        return new ArithExp(operation,left.deepcopy(),right.deepcopy());
     }
 
     @Override

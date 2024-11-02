@@ -1,17 +1,15 @@
 package model.expressions;
 import exceptions.ExpressionException;
 import model.adt.MyIDictionary;
-import model.expressions.LogicalOperation;
-import model.type.IType;
 import model.value.IValue;
 import model.type.BoolType;
 import model.value.BoolValue;
 
-public class LogicalExpression implements IExpression{
+public class LogicalExp implements IExpression{
     private IExpression left;
     private IExpression right;
-    private LogicalOperation operation;
-    public LogicalExpression(IExpression left, LogicalOperation operation, IExpression right) {
+    private LogicalOp operation;
+    public LogicalExp(IExpression left, LogicalOp operation, IExpression right) {
         this.left = left;
         this.operation = operation;
         this.right = right;
@@ -22,7 +20,7 @@ public class LogicalExpression implements IExpression{
     }
 
     public IExpression deepcopy(){
-        return new LogicalExpression(left.deepcopy(),operation,right.deepcopy());
+        return new LogicalExp(left.deepcopy(),operation,right.deepcopy());
     }
 
     public IValue evaluate(MyIDictionary<String, IValue> symTable) throws ExpressionException {
@@ -34,7 +32,7 @@ public class LogicalExpression implements IExpression{
 
         Boolean leftValue = ((BoolValue)(left)).getValue();
         Boolean rightValue = ((BoolValue)(right)).getValue();
-        if(operation == LogicalOperation.AND){
+        if(operation == LogicalOp.AND){
             return new BoolValue(leftValue && rightValue);
         }
         else {

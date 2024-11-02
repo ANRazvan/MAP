@@ -4,17 +4,17 @@ import exceptions.ExpressionException;
 import model.adt.MyIDictionary;
 import model.value.IValue;
 
-public class VariableExpression implements IExpression{
+public class VarExp implements IExpression{
     private String variable;
 
-    public VariableExpression(String variable)
+    public VarExp(String variable)
     {
         this.variable = variable;
 
     }
 
     public IExpression deepcopy(){
-        return new VariableExpression(new String(variable));
+        return new VarExp(new String(variable));
     }
 
     @Override
