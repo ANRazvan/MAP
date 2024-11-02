@@ -1,8 +1,6 @@
 package controller;
 import exceptions.EmptyStackException;
-import exceptions.ExpressionException;
 import exceptions.MyException;
-import exceptions.StatementException;
 import model.adt.MyIStack;
 import model.state.PrgState;
 import model.statements.IStmt;
