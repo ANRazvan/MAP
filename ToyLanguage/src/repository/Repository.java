@@ -1,19 +1,36 @@
 package repository;
 
+import exceptions.RepoException;
 import model.state.PrgState;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Repository implements IRepository {
     private List<PrgState> prgStates;
+    private String logFilePath;
+    private int CrtPrgIndex;
 
-    public Repository() {
+    public Repository(String logFilePath) {
         this.prgStates = new ArrayList<>();
+        this.CrtPrgIndex=0;
+        this.logFilePath=logFilePath;
+    }
+
+    public Repository(PrgState initState, String logFilePath) {
+        this.prgStates = new ArrayList<>();
+        this.prgStates.add(initState);
+        this.CrtPrgIndex=0;
+        this.logFilePath=logFilePath;
     }
 
     public PrgState getCrtPrg() {
-        return prgStates.getFirst();     }
+        return prgStates.get(0);     }
 
     public void removePrgState() {
         prgStates.removeFirst();
@@ -21,6 +38,17 @@ public class Repository implements IRepository {
 
     public void addPrgState(PrgState state) {
         prgStates.add(state);
+        this.CrtPrgIndex++;
+    }
+
+    public void logPrgStateExec() {
+        try {
+            PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(this.logFilePath, true)));
+            logFile.println(this.getCrtPrg().toString());
+            logFile.close();
+        } catch(IOException err) {
+            throw new RepoException("File not exists");
+        }
     }
 
 

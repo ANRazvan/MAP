@@ -6,6 +6,7 @@ import exceptions.ExpressionException;
 import java.util.EmptyStackException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MyDictionary <K, V> implements MyIDictionary<K, V> {
     Map<K, V> map;
@@ -33,7 +34,7 @@ public class MyDictionary <K, V> implements MyIDictionary<K, V> {
     }
 
     @Override
-    public V lookup(K key) throws ExpressionException {
+    public V getValue(K key) throws ExpressionException {
         if(this.map.containsKey(key))
             return this.map.get(key);
         else
@@ -48,4 +49,6 @@ public class MyDictionary <K, V> implements MyIDictionary<K, V> {
         return "Dictionary contains: " + st.toString();
 
     }
+
+    public Set<K> getKeys(){return this.map.keySet();}
 }

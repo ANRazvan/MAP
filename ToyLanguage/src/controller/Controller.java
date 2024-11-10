@@ -23,13 +23,14 @@ public class Controller {
     }
 
     public void allStep() throws MyException {
-        PrgState prg = repo.getCrtPrg(); // repo is the controller field of type MyIRepo
+        PrgState prg = repo.getCrtPrg();
         this.displayPrgState();
+        repo.logPrgStateExec();
         while (!prg.getExecStack().isEmpty()) {
             oneStep(prg);
             this.displayPrgState();
+            repo.logPrgStateExec();
         }
-        repo.removePrgState();
     }
 
     public void displayPrgState() {

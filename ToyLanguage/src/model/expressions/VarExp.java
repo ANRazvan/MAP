@@ -20,7 +20,7 @@ public class VarExp implements IExpression{
     @Override
     public IValue evaluate(MyIDictionary<String, IValue> symTbl) throws ExpressionException {
 
-        return symTbl.lookup(this.variable);
+        return symTbl.getValue(this.variable);
     }
     @Override
     public String toString()
