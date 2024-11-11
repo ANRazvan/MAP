@@ -1,0 +1,48 @@
+Stack contains: int v;v=2;print(v)
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+
+Stack contains: v=2;print(v)
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+
+Stack contains: v=2;print(v)
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+
+Stack contains: print(v)
+v=2
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+
+Stack contains: print(v)
+
+Dictionary contains: v -> 2
+
+List contains: 
+FileTable: 
+
+
+Stack contains: 
+Dictionary contains: v -> 2
+
+List contains: 2
+
+FileTable: 
+
+
