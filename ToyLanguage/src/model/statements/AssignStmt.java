@@ -26,7 +26,7 @@ public class AssignStmt implements IStmt {
         if(!state.getSymTable().contains(id))
             throw new StatementException("The variable wasnt declared previously!");
         IValue val = expression.evaluate(state.getSymTable());
-        if(!val.getType().equals(state.getSymTable().lookup(id).getType()))
+        if(!val.getType().equals(state.getSymTable().getValue(id).getType()))
             throw new StatementException("The types did not match!");
         state.getSymTable().insert(id,val);
         return state;

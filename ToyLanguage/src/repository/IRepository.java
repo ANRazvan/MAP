@@ -1,4 +1,5 @@
 package repository;
+import exceptions.MyException;
 import model.state.PrgState;
 
 public interface IRepository {
@@ -6,4 +7,6 @@ public interface IRepository {
     void addPrgState(PrgState state);
 
     void removePrgState();
+
+    void logPrgStateExec() throws MyException;
 }

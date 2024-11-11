@@ -1,0 +1,178 @@
+Stack contains: string varf;varf=test.in;openRFile(varf);int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf);
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+
+Stack contains: varf=test.in;openRFile(varf);int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf);
+string varf
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+
+Stack contains: varf=test.in;openRFile(varf);int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf);
+
+Dictionary contains: varf -> 
+
+List contains: 
+FileTable: 
+
+
+Stack contains: openRFile(varf);int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf);
+varf=test.in
+
+Dictionary contains: varf -> 
+
+List contains: 
+FileTable: 
+
+
+Stack contains: openRFile(varf);int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf);
+
+Dictionary contains: varf -> test.in
+
+List contains: 
+FileTable: 
+
+
+Stack contains: int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf);
+openRFile(varf)
+
+Dictionary contains: varf -> test.in
+
+List contains: 
+FileTable: 
+
+
+Stack contains: int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf);
+
+Dictionary contains: varf -> test.in
+
+List contains: 
+FileTable: 
+test.in
+
+
+Stack contains: readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf);
+int varc
+
+Dictionary contains: varf -> test.in
+
+List contains: 
+FileTable: 
+test.in
+
+
+Stack contains: readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf);
+
+Dictionary contains: varf -> test.in
+varc -> 0
+
+List contains: 
+FileTable: 
+test.in
+
+
+Stack contains: print(varc);readFile(varf, varc);print(varc);closeRFile(varf);
+readFile(varf, varc)
+
+Dictionary contains: varf -> test.in
+varc -> 0
+
+List contains: 
+FileTable: 
+test.in
+
+
+Stack contains: print(varc);readFile(varf, varc);print(varc);closeRFile(varf);
+
+Dictionary contains: varf -> test.in
+varc -> 0
+
+List contains: 
+FileTable: 
+test.in
+
+
+Stack contains: readFile(varf, varc);print(varc);closeRFile(varf);
+print(varc)
+
+Dictionary contains: varf -> test.in
+varc -> 0
+
+List contains: 
+FileTable: 
+test.in
+
+
+Stack contains: readFile(varf, varc);print(varc);closeRFile(varf);
+
+Dictionary contains: varf -> test.in
+varc -> 0
+
+List contains: 0
+
+FileTable: 
+test.in
+
+
+Stack contains: print(varc);closeRFile(varf);
+readFile(varf, varc)
+
+Dictionary contains: varf -> test.in
+varc -> 0
+
+List contains: 0
+
+FileTable: 
+test.in
+
+
+Stack contains: print(varc);closeRFile(varf);
+
+Dictionary contains: varf -> test.in
+varc -> 0
+
+List contains: 0
+
+FileTable: 
+test.in
+
+
+Stack contains: closeRFile(varf);
+print(varc)
+
+Dictionary contains: varf -> test.in
+varc -> 0
+
+List contains: 0
+
+FileTable: 
+test.in
+
+
+Stack contains: closeRFile(varf);
+
+Dictionary contains: varf -> test.in
+varc -> 0
+
+List contains: 0
+0
+
+FileTable: 
+test.in
+
+
+Stack contains: 
+Dictionary contains: varf -> test.in
+varc -> 0
+
+List contains: 0
+0
+
+FileTable: 
+
+
