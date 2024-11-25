@@ -1,7 +1,8 @@
 package model.expressions;
 
 import exceptions.ExpressionException;
-import model.adt.MyIDictionary;
+import model.adt.MyIHeap;
+import model.adt.MyIMap;
 import model.value.IValue;
 
 public class VarExp implements IExpression{
@@ -18,7 +19,7 @@ public class VarExp implements IExpression{
     }
 
     @Override
-    public IValue evaluate(MyIDictionary<String, IValue> symTbl) throws ExpressionException {
+    public IValue evaluate(MyIMap<String, IValue> symTbl, MyIHeap heap) throws ExpressionException {
 
         return symTbl.getValue(this.variable);
     }

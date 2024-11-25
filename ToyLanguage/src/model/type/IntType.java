@@ -4,6 +4,7 @@ import model.value.IValue;
 import model.value.IntValue;
 
 public class IntType implements IType{
+
     @Override
     public boolean equals(IType type) {
         return type instanceof IntType;

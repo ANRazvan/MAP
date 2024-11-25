@@ -25,7 +25,7 @@ public class AssignStmt implements IStmt {
     public PrgState execute(PrgState state) throws StatementException, ExpressionException {
         if(!state.getSymTable().contains(id))
             throw new StatementException("The variable wasnt declared previously!");
-        IValue val = expression.evaluate(state.getSymTable());
+        IValue val = expression.evaluate(state.getSymTable(),state.getHeap());
         if(!val.getType().equals(state.getSymTable().getValue(id).getType()))
             throw new StatementException("The types did not match!");
         state.getSymTable().insert(id,val);

@@ -1,6 +1,7 @@
 package model.expressions;
 import exceptions.ExpressionException;
-import model.adt.MyIDictionary;
+import model.adt.MyIHeap;
+import model.adt.MyIMap;
 import model.value.IValue;
 import model.type.BoolType;
 import model.value.BoolValue;
@@ -23,9 +24,9 @@ public class LogicalExp implements IExpression{
         return new LogicalExp(left.deepcopy(),operation,right.deepcopy());
     }
 
-    public IValue evaluate(MyIDictionary<String, IValue> symTable) throws ExpressionException {
-        IValue left = this.left.evaluate(symTable);
-        IValue right = this.right.evaluate(symTable);
+    public IValue evaluate(MyIMap<String, IValue> symTable, MyIHeap heap) throws ExpressionException {
+        IValue left = this.left.evaluate(symTable,heap);
+        IValue right = this.right.evaluate(symTable,heap);
         if(!(left.getType().equals(new BoolType()) && right.getType().equals(new BoolType()))){
             throw new ExpressionException("The values are not boolean!");
         }

@@ -1,7 +1,8 @@
 package model.expressions;
 
 import exceptions.ExpressionException;
-import model.adt.MyIDictionary;
+import model.adt.MyIHeap;
+import model.adt.MyIMap;
 import model.type.IntType;
 import model.value.BoolValue;
 import model.value.IValue;
@@ -10,18 +11,18 @@ import model.value.IntValue;
 public class RelationalExp implements IExpression{
     private IExpression left;
     private IExpression right;
-    private RelationalOp op;
+    private String op;
 
-    public RelationalExp(IExpression e1, RelationalOp op, IExpression e2) {
+    public RelationalExp(IExpression e1, String op, IExpression e2) {
         this.left = e1;
         this.right = e2;
         this.op = op;
     }
 
     @Override
-    public IValue evaluate(MyIDictionary<String, IValue> symTable) throws ExpressionException {
-        IValue left = this.left.evaluate(symTable);
-        IValue right = this.right.evaluate(symTable);
+    public IValue evaluate(MyIMap<String, IValue> symTable, MyIHeap heap) throws ExpressionException {
+        IValue left = this.left.evaluate(symTable,heap);
+        IValue right = this.right.evaluate(symTable,heap);
 
         if(!left.getType().equals(new IntType()))
             throw new ExpressionException("The left operand is not an integer!");
@@ -32,22 +33,22 @@ public class RelationalExp implements IExpression{
         int rightValue = ((IntValue)right).getValue();
 
         switch(op) {
-            case EQUAL -> {
+            case "=" -> {
                 return new BoolValue(leftValue == rightValue);
             }
-            case NOT_EQUAL -> {
+            case "!=" -> {
                 return new BoolValue(leftValue != rightValue);
             }
-            case LESS -> {
+            case "<" -> {
                 return new BoolValue(leftValue < rightValue);
             }
-            case LESS_OR_EQUAL -> {
+            case "<=" -> {
                 return new BoolValue(leftValue <= rightValue);
             }
-            case GREATER -> {
+            case ">" -> {
                 return new BoolValue(leftValue > rightValue);
             }
-            case GREATER_OR_EQUAL -> {
+            case ">=" -> {
                 return new BoolValue(leftValue >= rightValue);
             }
             default-> {

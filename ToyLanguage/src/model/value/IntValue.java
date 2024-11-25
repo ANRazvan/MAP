@@ -18,8 +18,8 @@ public class IntValue implements IValue{
     }
 
     @Override
-    public boolean equals(IValue obj) {
-        return obj.getType() instanceof IntType &&((IntValue)obj).getValue()==this.getValue();
+    public boolean equals(IValue val) {
+        return val.getType() instanceof IntType &&((IntValue)val).getValue()==this.getValue();
     }
 
     public IValue deepcopy(){

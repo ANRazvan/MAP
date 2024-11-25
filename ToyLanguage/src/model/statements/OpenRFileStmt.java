@@ -18,7 +18,7 @@ public class OpenRFileStmt implements IStmt{
     }
 
     public PrgState execute(PrgState prgState){
-        IValue val = expression.evaluate(prgState.getSymTable());
+        IValue val = expression.evaluate(prgState.getSymTable(), prgState.getHeap());
         if(!val.getType().equals(new StringType()))
             throw new StatementException("The expression is not a string");
 
