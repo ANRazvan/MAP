@@ -19,7 +19,7 @@ public class CloseRFileStmt implements IStmt {
 
     @Override
     public PrgState execute(PrgState prgState) {
-        IValue value = this.expression.evaluate(prgState.getSymTable());
+        IValue value = this.expression.evaluate(prgState.getSymTable(), prgState.getHeap());
         if(!value.getType().equals(new StringType()))
             throw new StatementException("The result of the expression is not a StringType");
 

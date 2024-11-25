@@ -1,6 +1,7 @@
 package model.expressions;
 
-import model.adt.MyIDictionary;
+import model.adt.MyIHeap;
+import model.adt.MyIMap;
 import model.value.IValue;
 
 public class ValueExp implements IExpression {
@@ -14,7 +15,7 @@ public class ValueExp implements IExpression {
     }
 
     @Override
-    public IValue evaluate(MyIDictionary<String, IValue> symTbl) {
+    public IValue evaluate(MyIMap<String, IValue> symTbl, MyIHeap heap) {
         return this.value;
     }
 

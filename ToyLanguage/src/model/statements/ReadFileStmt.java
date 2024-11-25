@@ -1,8 +1,7 @@
 package model.statements;
 
 import exceptions.StatementException;
-import model.adt.MyDictionary;
-import model.adt.MyIDictionary;
+import model.adt.MyIMap;
 import model.expressions.IExpression;
 import model.state.PrgState;
 import model.value.IValue;
@@ -26,7 +25,8 @@ public class ReadFileStmt implements IStmt{
     @Override
     public PrgState execute(PrgState prgState)  {
 
-        MyIDictionary<String, IValue> symTable = prgState.getSymTable();
+        MyIMap<String, IValue> symTable = prgState.getSymTable();
+
         if (!symTable.contains(this.varName))
             throw new StatementException("Variable not found");
 
@@ -34,7 +34,7 @@ public class ReadFileStmt implements IStmt{
         if (!value.getType().equals(new IntType()))
             throw new StatementException("The variable is not a String type");
 
-        IValue result = this.expression.evaluate(symTable);
+        IValue result = this.expression.evaluate(symTable, prgState.getHeap());
         if (!result.getType().equals(new StringType()))
             throw new StatementException("The result of the expression is not a StringType");
 

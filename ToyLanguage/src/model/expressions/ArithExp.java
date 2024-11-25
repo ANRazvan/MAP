@@ -1,7 +1,8 @@
 package model.expressions;
 
 import exceptions.ExpressionException;
-import model.adt.MyIDictionary;
+import model.adt.MyIHeap;
+import model.adt.MyIMap;
 import model.type.IntType;
 import model.value.IValue;
 import model.value.IntValue;
@@ -49,10 +50,10 @@ public class ArithExp implements IExpression {
     }
 
     @Override
-    public IValue evaluate(MyIDictionary<String, IValue> symTbl) throws ExpressionException {
+    public IValue evaluate(MyIMap<String, IValue> symTbl, MyIHeap heap) throws ExpressionException {
 
-        IValue leftValue = left.evaluate(symTbl);
-        IValue rightValue = right.evaluate(symTbl);
+        IValue leftValue = left.evaluate(symTbl,heap);
+        IValue rightValue = right.evaluate(symTbl,heap);
 
         if(!leftValue.getType().equals(new IntType())
                 || !rightValue.getType().equals(new IntType())){
