@@ -1,6 +1,7 @@
 package model.adt;
 
 import exceptions.ExpressionException;
+import model.value.IValue;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -56,5 +57,14 @@ public class MyMap<K, V> implements MyIMap<K, V> {
             this.map.put(key,value);
         else
             throw new ExpressionException("Key not found");
+    }
+
+    @Override
+    public MyIMap<String, IValue> deepcopy() {
+        MyMap<String, IValue> newMap = new MyMap<>();
+        this.map.forEach((k,v)->{
+            newMap.insert((String) k, (IValue) v);
+        });
+        return newMap;
     }
 }

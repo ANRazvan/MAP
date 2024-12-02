@@ -26,7 +26,7 @@ public class WhileStmt implements IStmt{
         else
             throw new StatementException("Condition is not a boolean");
 
-        return state;
+        return null;
     }
 
     @Override

@@ -1,6 +1,7 @@
 package model.adt;
 
 import exceptions.ExpressionException;
+import model.value.IValue;
 
 import java.util.Map;
 import java.util.Set;
@@ -13,4 +14,6 @@ public interface MyIMap<K, V> {
     public Map<K,V> getContent();
     Set<K> getKeys();
     public void update(K key, V value);
+
+    MyIMap<String, IValue> deepcopy();
 }

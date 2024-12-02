@@ -29,7 +29,7 @@ public class AssignStmt implements IStmt {
         if(!val.getType().equals(state.getSymTable().getValue(id).getType()))
             throw new StatementException("The types did not match!");
         state.getSymTable().insert(id,val);
-        return state;
+        return null;
     }
 
 }

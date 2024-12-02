@@ -101,7 +101,7 @@ public class Interpreter {
 
         // Example 1: test new heap memory
         // Ref int v; new(v,20); Ref Ref int a; new(a,v); print(v); print(a);
-        VarDeclStmt varDeclStmt1 = new VarDeclStmt("v", new RefType(new IntType()));
+        /*VarDeclStmt varDeclStmt1 = new VarDeclStmt("v", new RefType(new IntType()));
         HeapAllocStmt allocStmt1 = new HeapAllocStmt("v", new ValueExp(new IntValue(20)));
         VarDeclStmt varDeclStmt2 = new VarDeclStmt("a", new RefType(new RefType(new IntType())));
         HeapAllocStmt allocStmt2 = new HeapAllocStmt("a", new VarExp("v"));
@@ -189,16 +189,59 @@ public class Interpreter {
                         new CompStmt(whileStmt1, printStmt9)));
         PrgState prgState5 = new PrgState(ex5,new MyStack<IStmt>(), new MyMap<String, IValue>(), new MyList<IValue>(),  new MyMap<StringValue, BufferedReader>(), new MyHeap());
         IRepository repository5 = new Repository(prgState5, logFilePath);
-        Controller ctr5 = new Controller(repository5);
+        Controller ctr5 = new Controller(repository5);*/
+        /*
+        Example:
+   int v; Ref int a; v=10;new(a,22);
+   fork(wH(a,30);v=32;print(v);print(rH(a)));
+   print(v);print(rH(a))
+At the end:
+Id=1
+SymTable_1={v->10,a->(1,int)}
+Id=10
+SymTable_10={v->32,a->(1,int)}
+Heap={1->30}
+Out={10,30,32,30}
+Program ID: 1
+Stack contains:
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable:
+
+Heap contains: 1 -> 30
+         */
+        IStmt s1 = new VarDeclStmt("v", new IntType());
+        IStmt s2 = new VarDeclStmt("a", new RefType(new IntType()));
+        IStmt s3 = new AssignStmt("v", new ValueExp(new IntValue(10)));
+        IStmt s4 = new HeapAllocStmt("a", new ValueExp(new IntValue(22)));
+        IStmt s6 = new WriteHeapStmt("a", new ValueExp(new IntValue(30)));
+        IStmt s7 = new AssignStmt("v", new ValueExp(new IntValue(32)));
+        IStmt s8 = new PrintStmt(new VarExp("v"));
+        IStmt s9 = new PrintStmt(new ReadHeapExp(new VarExp("a")));
+        IStmt s5 = new CompStmt(s6, new CompStmt(s7, new CompStmt(s8, s9)));
+        IStmt s10 = new PrintStmt(new VarExp("v"));
+        IStmt s11 = new PrintStmt(new ReadHeapExp(new VarExp("a")));
+        IStmt ex6 = new CompStmt(s1, new CompStmt(s2, new CompStmt(s3, new CompStmt(s4, new CompStmt(new ForkStmt(s5), new CompStmt(s10, s11))))));
+        PrgState prgState6 = new PrgState(ex6,new MyStack<IStmt>(), new MyMap<String, IValue>(), new MyList<IValue>(),  new MyMap<StringValue, BufferedReader>(), new MyHeap());
+        IRepository repository6 = new Repository(prgState6, logFilePath);
+        Controller ctr6 = new Controller(repository6);
+
+
+
 
 
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "exit"));
-        menu.addCommand(new RunExample("1",ex1.toString(),ctr1));
+/*        menu.addCommand(new RunExample("1",ex1.toString(),ctr1));
         menu.addCommand(new RunExample("2",ex2.toString(),ctr2));
         menu.addCommand(new RunExample("3",ex3.toString(),ctr3));
         menu.addCommand(new RunExample("4",ex4.toString(),ctr4));
-        menu.addCommand(new RunExample("5",ex5.toString(),ctr5));
+        menu.addCommand(new RunExample("5",ex5.toString(),ctr5));*/
+        menu.addCommand(new RunExample("1",ex6.toString(),ctr6));
         menu.show();
     }
 }

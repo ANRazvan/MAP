@@ -28,7 +28,7 @@ public class OpenRFileStmt implements IStmt{
         try{
             BufferedReader reader = new BufferedReader(new FileReader(fileName.getValue()));
             prgState.getFileTable().insert(fileName, reader);
-            return prgState;
+            return null;
         }
         catch(IOException e){
             throw new StatementException("Problem at opening the file");

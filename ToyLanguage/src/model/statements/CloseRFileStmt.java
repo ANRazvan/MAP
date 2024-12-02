@@ -30,7 +30,7 @@ public class CloseRFileStmt implements IStmt {
         try{
             prgState.getFileTable().getValue(fileName).close();
             prgState.getFileTable().remove(fileName);
-            return prgState;
+            return null;
         }catch(IOException e){
             throw new StatementException("Problem at closing the BufferedReader");
         }
