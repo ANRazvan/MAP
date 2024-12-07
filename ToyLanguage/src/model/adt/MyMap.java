@@ -1,6 +1,7 @@
 package model.adt;
 
 import exceptions.ExpressionException;
+import model.type.IType;
 import model.value.IValue;
 
 import java.util.HashMap;
@@ -33,7 +34,7 @@ public class MyMap<K, V> implements MyIMap<K, V> {
         return this.map.containsKey(key);
     }
 
-    public V getValue(K key) throws ExpressionException {
+    public V lookup(K key) throws ExpressionException {
         if(this.map.containsKey(key))
             return this.map.get(key);
         else
@@ -60,11 +61,14 @@ public class MyMap<K, V> implements MyIMap<K, V> {
     }
 
     @Override
-    public MyIMap<String, IValue> deepcopy() {
-        MyMap<String, IValue> newMap = new MyMap<>();
-        this.map.forEach((k,v)->{
-            newMap.insert((String) k, (IValue) v);
-        });
+    public MyIMap<K, V> clone() {
+        MyIMap<K, V> newMap = new MyMap<K, V>();
+        for (K key : map.keySet()) {
+            IValue value = (IValue) map.get(key);
+            newMap.insert(key, (V) value.deepcopy());
+        }
         return newMap;
+
     }
+
 }

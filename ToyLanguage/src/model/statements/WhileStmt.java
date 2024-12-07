@@ -2,8 +2,11 @@ package model.statements;
 
 import exceptions.ExpressionException;
 import exceptions.StatementException;
+import model.adt.MyIMap;
 import model.expressions.IExpression;
 import model.state.PrgState;
+import model.type.BoolType;
+import model.type.IType;
 import model.value.BoolValue;
 
 public class WhileStmt implements IStmt{
@@ -32,6 +35,15 @@ public class WhileStmt implements IStmt{
     @Override
     public IStmt deepcopy() {
         return null;
+    }
+
+    @Override
+    public MyIMap<String, IType> typecheck(MyIMap<String, IType> typeEnv) throws StatementException {
+        IType condType = cond.typecheck(typeEnv);
+        if(condType.equals(new BoolType()))
+            return typeEnv;
+        else
+            throw new StatementException("Condition is not a boolean");
     }
 
     public String toString() {

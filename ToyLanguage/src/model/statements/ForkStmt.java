@@ -4,6 +4,7 @@ import exceptions.ExpressionException;
 import exceptions.StatementException;
 import model.adt.*;
 import model.state.PrgState;
+import model.type.IType;
 import model.value.IValue;
 
 public class ForkStmt implements IStmt{
@@ -17,13 +18,23 @@ public class ForkStmt implements IStmt{
     @Override
     public PrgState execute(PrgState state) throws StatementException, ExpressionException {
             MyIStack<IStmt> newStack = new MyStack<IStmt>();
-            MyIMap<String, IValue> newSymTable = state.getSymTable().deepcopy();
+            MyIMap<String, IValue> newSymTable = state.getSymTable().clone();
             return new PrgState(statement,newStack, newSymTable, state.getOutputList(), state.getFileTable(), state.getHeap());
     }
 
     @Override
     public IStmt deepcopy() {
-        return null;
+        return new ForkStmt(statement.deepcopy());
+    }
+
+    @Override
+    public MyIMap<String, IType> typecheck(MyIMap<String, IType> typeEnv) throws StatementException {
+        return statement.typecheck(typeEnv);
+    }
+
+    @Override
+    public String toString() {
+        return "fork(" + statement.toString() + ")";
     }
 
 }

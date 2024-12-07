@@ -1,6 +1,9 @@
 package model.statements;
 
+import exceptions.StatementException;
+import model.adt.MyIMap;
 import model.state.PrgState;
+import model.type.IType;
 
 public class CompStmt implements IStmt {
     private IStmt first;
@@ -8,6 +11,11 @@ public class CompStmt implements IStmt {
 
     public IStmt deepcopy(){
         return new CompStmt(first.deepcopy(),second.deepcopy());
+    }
+
+    @Override
+    public MyIMap<String, IType> typecheck(MyIMap<String, IType> typeEnv) throws StatementException {
+        return second.typecheck(first.typecheck(typeEnv));
     }
 
     public CompStmt(IStmt first, IStmt second) {

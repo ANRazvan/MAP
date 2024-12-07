@@ -30,7 +30,7 @@ public class HeapAllocStmt implements IStmt {
             throw new StatementException("Variable name is not in the symtable.");
         }
 
-        IValue variableValue = symTable.getValue(var);
+        IValue variableValue = symTable.lookup(var);
 
 
         if (!(variableValue instanceof RefValue)) {
@@ -53,6 +53,18 @@ public class HeapAllocStmt implements IStmt {
     @Override
     public IStmt deepcopy() {
         return new HeapAllocStmt(var, expr);
+    }
+
+    @Override
+    public MyIMap<String, IType> typecheck(MyIMap<String, IType> typeEnv) throws StatementException {
+        IType typeVar = typeEnv.lookup(var);
+        IType typeExpr = expr.typecheck(typeEnv);
+
+        if (typeVar.equals(new RefType(typeExpr))) {
+            return typeEnv;
+        } else {
+            throw new StatementException("HeapAllocStmt: right hand side and left hand side have different types");
+        }
     }
 
     public String toString(){

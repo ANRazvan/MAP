@@ -5,7 +5,7 @@ import model.value.RefValue;
 public class RefType implements IType{
     IType inner;
     public RefType(IType inner) {this.inner=inner;}
-    IType getInner() {return inner;}
+    public IType getInner() {return inner;}
 
     @Override
     public boolean equals(IType another){

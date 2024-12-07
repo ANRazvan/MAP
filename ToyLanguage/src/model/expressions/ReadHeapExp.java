@@ -3,6 +3,8 @@ package model.expressions;
 import exceptions.ExpressionException;
 import model.adt.MyIHeap;
 import model.adt.MyIMap;
+import model.type.IType;
+import model.type.RefType;
 import model.value.IValue;
 import model.value.RefValue;
 
@@ -11,6 +13,18 @@ public class ReadHeapExp implements IExpression{
 
     public ReadHeapExp(IExpression expression) {
         this.expression = expression;
+    }
+
+    @Override
+    public IType typecheck(MyIMap<String, IType> typeEnv) throws ExpressionException {
+        IType type = expression.typecheck(typeEnv);
+        if(type instanceof RefType){
+            RefType refType = (RefType) type;
+            return refType.getInner();
+        }
+        else{
+            throw new ExpressionException("Expression is not a reference");
+        }
     }
 
     @Override

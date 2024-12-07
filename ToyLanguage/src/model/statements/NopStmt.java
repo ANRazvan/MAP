@@ -1,6 +1,9 @@
 package model.statements;
 
+import exceptions.StatementException;
+import model.adt.MyIMap;
 import model.state.PrgState;
+import model.type.IType;
 
 public class NopStmt implements IStmt {
     public NopStmt() {};
@@ -12,6 +15,11 @@ public class NopStmt implements IStmt {
 
     public IStmt deepcopy(){
         return new NopStmt();
+    }
+
+    @Override
+    public MyIMap<String, IType> typecheck(MyIMap<String, IType> typeEnv) throws StatementException {
+        return typeEnv;
     }
 
     @Override
