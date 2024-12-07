@@ -47,7 +47,7 @@ public class HeapAllocStmt implements IStmt {
         heap.insert(addr, evalExpr);
         symTable.update(var, new RefValue(addr, evalExpr.getType()));
 
-        return prgState;
+        return null;
     }
 
     @Override

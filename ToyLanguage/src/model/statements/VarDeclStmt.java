@@ -16,7 +16,7 @@ public class VarDeclStmt implements IStmt {
     public PrgState execute(PrgState state) throws StatementException{
         if(state.getSymTable().contains(this.name)) throw new StatementException("A variable with the same name already exists!\n");
         state.getSymTable().insert(this.name, this.type.getDefaultValue());
-        return state;
+        return null;
     }
 
     public IStmt deepcopy(){

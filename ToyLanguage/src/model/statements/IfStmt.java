@@ -30,7 +30,7 @@ public class IfStmt implements IStmt {
         }
         else
             state.getExecStack().push(elseStatement);
-        return state;
+        return null;
     }
 
     public IStmt deepcopy(){

@@ -40,7 +40,7 @@ public class WriteHeapStmt implements IStmt{
        if(!expValue.getType().equals(refValue.getLocationType()))
            throw new TypeException("Types do not match");
        heap.update(refValue.getAddr(), expValue);
-       return state;
+       return null;
     }
 
     @Override

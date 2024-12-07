@@ -2,11 +2,17 @@ package repository;
 import exceptions.MyException;
 import model.state.PrgState;
 
+import java.util.List;
+
 public interface IRepository {
-    PrgState getCrtPrg();
+
+    List<PrgState> getPrgList();
+
+    void setPrgList(List<PrgState> prgStates);
+
     void addPrgState(PrgState state);
 
     void removePrgState();
 
-    void logPrgStateExec() throws MyException;
+    void logPrgStateExec(PrgState state) throws MyException;
 }

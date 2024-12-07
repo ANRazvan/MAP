@@ -51,7 +51,7 @@ public class ReadFileStmt implements IStmt{
             int parser = Integer.parseInt(line);
 
             symTable.insert(this.varName, new IntValue(parser));
-            return prgState;
+            return null;
 
         } catch (IOException e) {
             throw new StatementException("Problem at reading from the BufferedReader");

@@ -25,12 +25,19 @@ public class Repository implements IRepository {
     public Repository(PrgState initState, String logFilePath) {
         this.prgStates = new ArrayList<>();
         this.prgStates.add(initState);
+        System.out.println(this.prgStates.size());
         this.CrtPrgIndex=0;
         this.logFilePath=logFilePath;
     }
 
-    public PrgState getCrtPrg() {
-        return prgStates.get(0);     }
+    public void setPrgList(List <PrgState> newPrgStates){
+        this.prgStates = newPrgStates;
+    }
+
+    @Override
+    public List<PrgState> getPrgList() {
+        return this.prgStates;
+    }
 
     public void removePrgState() {
         prgStates.removeFirst();
@@ -41,10 +48,10 @@ public class Repository implements IRepository {
         this.CrtPrgIndex++;
     }
 
-    public void logPrgStateExec() {
+    public void logPrgStateExec(PrgState state) {
         try {
             PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(this.logFilePath, true)));
-            logFile.println(this.getCrtPrg().toString());
+            logFile.println(state.toString());
             logFile.close();
         } catch(IOException err) {
             throw new RepoException("File not exists");
