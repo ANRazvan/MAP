@@ -96,7 +96,6 @@ public class Interpreter {
 
         IRepository repo4 = new Repository(prg4,path);
         Controller ctr4 = new Controller(repo4);*/
-
         // Example 1: test new heap memory
         // Ref int v; new(v,20); Ref Ref int a; new(a,v); print(v); print(a);
         /*VarDeclStmt varDeclStmt1 = new VarDeclStmt("v", new RefType(new IntType()));
@@ -213,7 +212,7 @@ FileTable:
 Heap contains: 1 -> 30
          */
         IStmt s1 = new VarDeclStmt("v", new IntType());
-        IStmt s2 = new VarDeclStmt("a", new RefType(new IntType()));
+        IStmt s2 = new VarDeclStmt("a", new RefType(new StringType()));
         IStmt s3 = new AssignStmt("v", new ValueExp(new IntValue(10)));
         IStmt s4 = new HeapAllocStmt("a", new ValueExp(new IntValue(22)));
         IStmt s6 = new WriteHeapStmt("a", new ValueExp(new IntValue(30)));
