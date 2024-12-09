@@ -1,7 +1,9 @@
 package model.expressions;
 
+import exceptions.ExpressionException;
 import model.adt.MyIHeap;
 import model.adt.MyIMap;
+import model.type.IType;
 import model.value.IValue;
 
 public class ValueExp implements IExpression {
@@ -12,6 +14,11 @@ public class ValueExp implements IExpression {
 
     public IExpression deepcopy(){
         return new ValueExp(value.deepcopy());
+    }
+
+    @Override
+    public IType typecheck(MyIMap<String, IType> typeEnv) throws ExpressionException {
+        return this.value.getType();
     }
 
     @Override

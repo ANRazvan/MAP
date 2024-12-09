@@ -27,7 +27,7 @@ public class RefValue implements IValue{
 
     @Override
     public IValue deepcopy() {
-        return null;
+        return new RefValue(address, locationType.deepcopy());
     }
 
     public IType getLocationType() { return locationType;}

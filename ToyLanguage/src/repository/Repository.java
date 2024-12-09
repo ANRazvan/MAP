@@ -25,7 +25,6 @@ public class Repository implements IRepository {
     public Repository(PrgState initState, String logFilePath) {
         this.prgStates = new ArrayList<>();
         this.prgStates.add(initState);
-        System.out.println(this.prgStates.size());
         this.CrtPrgIndex=0;
         this.logFilePath=logFilePath;
     }

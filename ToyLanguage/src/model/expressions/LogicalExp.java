@@ -2,6 +2,7 @@ package model.expressions;
 import exceptions.ExpressionException;
 import model.adt.MyIHeap;
 import model.adt.MyIMap;
+import model.type.IType;
 import model.value.IValue;
 import model.type.BoolType;
 import model.value.BoolValue;
@@ -22,6 +23,18 @@ public class LogicalExp implements IExpression{
 
     public IExpression deepcopy(){
         return new LogicalExp(left.deepcopy(),operation,right.deepcopy());
+    }
+
+    @Override
+    public IType typecheck(MyIMap<String, IType> typeEnv) throws ExpressionException {
+        IType leftType = left.typecheck(typeEnv);
+        IType rightType = right.typecheck(typeEnv);
+        if(leftType.equals(new BoolType()) && rightType.equals(new BoolType())){
+            return new BoolType();
+        }
+        else{
+            throw new ExpressionException("The values are not boolean!");
+        }
     }
 
     public IValue evaluate(MyIMap<String, IValue> symTable, MyIHeap heap) throws ExpressionException {

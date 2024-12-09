@@ -1,7 +1,9 @@
 package model.statements;
 import exceptions.StatementException;
+import model.adt.MyIMap;
 import model.expressions.IExpression;
 import model.state.PrgState;
+import model.type.IType;
 import model.type.StringType;
 import model.value.IValue;
 import model.value.StringValue;
@@ -39,6 +41,15 @@ public class OpenRFileStmt implements IStmt{
     @Override
     public IStmt deepcopy() {
         return new OpenRFileStmt(expression.deepcopy());
+    }
+
+    @Override
+    public MyIMap<String, IType> typecheck(MyIMap<String, IType> typeEnv) throws StatementException {
+        IType type = expression.typecheck(typeEnv);
+        if(type.equals(new StringType()))
+            return typeEnv;
+        else
+            throw new StatementException("The expression is not a string");
     }
 
     public String toString(){

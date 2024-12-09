@@ -49,6 +49,7 @@ public class PrgState {
             throw new EmptyStackException("The stack is empty!");
         }
         IStmt currentStmt = execStack.pop();
+        System.out.println("One Step Current statement: " + currentStmt);
         return currentStmt.execute(this);
     }
 

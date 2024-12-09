@@ -1,6 +1,7 @@
 package model.statements;
 
 import exceptions.StatementException;
+import model.adt.MyIMap;
 import model.state.PrgState;
 import model.type.IType;
 
@@ -21,6 +22,12 @@ public class VarDeclStmt implements IStmt {
 
     public IStmt deepcopy(){
         return new VarDeclStmt(new String(name),type.deepcopy());
+    }
+
+    @Override
+    public MyIMap<String, IType> typecheck(MyIMap<String, IType> typeEnv) throws StatementException {
+        typeEnv.insert(name, type);
+        return typeEnv;
     }
 
     public String toString() {

@@ -1,15 +1,9 @@
 import controller.Controller;
-import model.adt.MyHeap;
-import model.adt.MyMap;
-import model.adt.MyList;
-import model.adt.MyStack;
+import model.adt.*;
 import model.expressions.*;
 import model.state.PrgState;
 import model.statements.*;
-import model.type.BoolType;
-import model.type.IntType;
-import model.type.RefType;
-import model.type.StringType;
+import model.type.*;
 import model.value.BoolValue;
 import model.value.IValue;
 import model.value.IntValue;
@@ -23,12 +17,16 @@ import view.commands.RunExample;
 import java.io.BufferedReader;
 import java.util.Scanner;
 
+import static java.lang.System.exit;
+
 public class Interpreter {
     public static void main(String[] args) {
-        System.out.println("Enter the path: \n");
+//        System.out.println("Enter the path: \n");
+        System.out.println("Filename for log hardcoded to log.txt");
         String logFilePath;
         Scanner scanner1 = new Scanner(System.in);
-        logFilePath = scanner1.next();
+//        logFilePath = scanner1.next();
+        logFilePath = "log.txt";
         /*        IStmt ex1= new CompStmt(new VarDeclStmt("v",new IntType()),
                 new CompStmt(new AssignStmt("v",new ValueExp(new IntValue(2))), new PrintStmt(new
                         VarExp("v"))));
@@ -98,7 +96,6 @@ public class Interpreter {
 
         IRepository repo4 = new Repository(prg4,path);
         Controller ctr4 = new Controller(repo4);*/
-
         // Example 1: test new heap memory
         // Ref int v; new(v,20); Ref Ref int a; new(a,v); print(v); print(a);
         /*VarDeclStmt varDeclStmt1 = new VarDeclStmt("v", new RefType(new IntType()));
@@ -215,7 +212,7 @@ FileTable:
 Heap contains: 1 -> 30
          */
         IStmt s1 = new VarDeclStmt("v", new IntType());
-        IStmt s2 = new VarDeclStmt("a", new RefType(new IntType()));
+        IStmt s2 = new VarDeclStmt("a", new RefType(new StringType()));
         IStmt s3 = new AssignStmt("v", new ValueExp(new IntValue(10)));
         IStmt s4 = new HeapAllocStmt("a", new ValueExp(new IntValue(22)));
         IStmt s6 = new WriteHeapStmt("a", new ValueExp(new IntValue(30)));
@@ -226,6 +223,15 @@ Heap contains: 1 -> 30
         IStmt s10 = new PrintStmt(new VarExp("v"));
         IStmt s11 = new PrintStmt(new ReadHeapExp(new VarExp("a")));
         IStmt ex6 = new CompStmt(s1, new CompStmt(s2, new CompStmt(s3, new CompStmt(s4, new CompStmt(new ForkStmt(s5), new CompStmt(s10, s11))))));
+        MyIMap<String, IType> typeEnv = new MyMap<String,IType>();
+        try {
+            ex6.typecheck(typeEnv);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return;
+        }
+        System.out.println("Finished typechecking");
+
         PrgState prgState6 = new PrgState(ex6,new MyStack<IStmt>(), new MyMap<String, IValue>(), new MyList<IValue>(),  new MyMap<StringValue, BufferedReader>(), new MyHeap());
         IRepository repository6 = new Repository(prgState6, logFilePath);
         Controller ctr6 = new Controller(repository6);

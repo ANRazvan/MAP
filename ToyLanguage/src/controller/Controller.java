@@ -74,6 +74,7 @@ public class Controller {
 
     void oneStepForAllPrg(List <PrgState> prgList) throws InterruptedException {
         prgList.forEach(prg->repo.logPrgStateExec(prg));
+
         List<Callable<PrgState>> callList = prgList.stream().
                 map((PrgState p)->(Callable<PrgState>)(() -> {return p.oneStep();})).
                 collect(Collectors.toList());
@@ -89,6 +90,7 @@ public class Controller {
                 .filter(p-> p!=null)
                 .collect(Collectors.toList());
         prgList.addAll(newPrgList);
+
         prgList.forEach(prg->repo.logPrgStateExec(prg));
         System.out.println("After one step");
         prgList.forEach(prg->displayPrgState(prg));

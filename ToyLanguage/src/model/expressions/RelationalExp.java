@@ -3,6 +3,8 @@ package model.expressions;
 import exceptions.ExpressionException;
 import model.adt.MyIHeap;
 import model.adt.MyIMap;
+import model.type.BoolType;
+import model.type.IType;
 import model.type.IntType;
 import model.value.BoolValue;
 import model.value.IValue;
@@ -17,6 +19,25 @@ public class RelationalExp implements IExpression{
         this.left = e1;
         this.right = e2;
         this.op = op;
+    }
+
+    @Override
+    public IType typecheck(MyIMap<String, IType> typeEnv) throws ExpressionException {
+        IType type1, type2;
+        type1 = left.typecheck(typeEnv);
+        type2 = right.typecheck(typeEnv);
+
+        if(type1.equals(new IntType())) {
+            if(type2.equals(new IntType())) {
+                return new BoolType();
+            }
+            else {
+                throw new ExpressionException("Second operand is not an integer!");
+            }
+        }
+        else {
+            throw new ExpressionException("First operand is not an integer!");
+        }
     }
 
     @Override
