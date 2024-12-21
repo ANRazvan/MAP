@@ -212,7 +212,7 @@ FileTable:
 Heap contains: 1 -> 30
          */
         IStmt s1 = new VarDeclStmt("v", new IntType());
-        IStmt s2 = new VarDeclStmt("a", new RefType(new StringType()));
+        IStmt s2 = new VarDeclStmt("a", new RefType(new IntType()));
         IStmt s3 = new AssignStmt("v", new ValueExp(new IntValue(10)));
         IStmt s4 = new HeapAllocStmt("a", new ValueExp(new IntValue(22)));
         IStmt s6 = new WriteHeapStmt("a", new ValueExp(new IntValue(30)));
