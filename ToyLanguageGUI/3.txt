@@ -1,0 +1,71 @@
+Program ID: 1
+Stack contains: int v;Ref(int) a;v=10;new(a, 22);model.statements.ForkStmt@614ddd49;print(v);print(ReadHeap(a))
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);model.statements.ForkStmt@614ddd49;print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);model.statements.ForkStmt@614ddd49;print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);model.statements.ForkStmt@614ddd49;print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);model.statements.ForkStmt@614ddd49;print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);model.statements.ForkStmt@614ddd49;print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);model.statements.ForkStmt@614ddd49;print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+

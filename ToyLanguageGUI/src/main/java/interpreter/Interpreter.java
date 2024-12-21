@@ -1,10 +1,11 @@
+package interpreter;
+
 import controller.Controller;
 import model.adt.*;
 import model.expressions.*;
 import model.state.PrgState;
 import model.statements.*;
 import model.type.*;
-import model.value.BoolValue;
 import model.value.IValue;
 import model.value.IntValue;
 import model.value.StringValue;
@@ -16,8 +17,6 @@ import view.commands.RunExample;
 
 import java.io.BufferedReader;
 import java.util.Scanner;
-
-import static java.lang.System.exit;
 
 public class Interpreter {
     public static void main(String[] args) {
