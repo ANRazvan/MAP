@@ -2,6 +2,7 @@ package model.adt;
 
 import exceptions.EmptyStackException;
 
+import java.util.List;
 import java.util.Stack;
 
 public class MyStack<T> implements MyIStack<T> {
@@ -31,6 +32,11 @@ public class MyStack<T> implements MyIStack<T> {
     @Override
     public int size() {
         return this.stack.size();
+    }
+
+    @Override
+    public List<T> getContentAsList() {
+        return this.stack;
     }
 
     @Override
