@@ -54,10 +54,10 @@ public class Selector {
         IStmt s7 = new AssignStmt("v", new ValueExp(new IntValue(32)));
         IStmt s8 = new PrintStmt(new VarExp("v"));
         IStmt s9 = new PrintStmt(new ReadHeapExp(new VarExp("a")));
-        IStmt s5 = new CompStmt(s6, new CompStmt(s7, new CompStmt(s8, s9)));
+        IStmt s5 = new CompStmt(s9, new CompStmt(s7, new CompStmt(s8, s6)));
         IStmt s10 = new PrintStmt(new VarExp("v"));
         IStmt s11 = new PrintStmt(new ReadHeapExp(new VarExp("a")));
-        IStmt ex6 = new CompStmt(s1, new CompStmt(s2, new CompStmt(s3, new CompStmt(s4, new CompStmt(new ForkStmt(s5), new CompStmt(s10, s11))))));
+        IStmt ex6 = new CompStmt(s1, new CompStmt(s2, new CompStmt(s3, new CompStmt(s4, new CompStmt(new ForkStmt(new CompStmt(new VarDeclStmt("c",new IntType()),s5)), new CompStmt(s10, s11))))));
         MyIMap<String, IType> typeEnv = new MyMap<String,IType>();
         try {
             ex6.typecheck(typeEnv);
