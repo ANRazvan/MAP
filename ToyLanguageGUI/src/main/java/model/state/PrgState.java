@@ -8,7 +8,7 @@ import model.value.StringValue;
 
 import java.io.BufferedReader;
 
-public class PrgState {
+public class    PrgState {
     private MyIStack<IStmt> execStack;
     private MyIMap<String, IValue> symTable;
     private MyIList<IValue> outputList;
@@ -91,5 +91,10 @@ public class PrgState {
 
     public MyIHeap getHeap() {
         return this.heap;
+    }
+
+
+    public Integer getId() {
+        return programId;
     }
 }

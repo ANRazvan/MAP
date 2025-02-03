@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 
 public class Controller {
     private IRepository repo;
-    private ExecutorService executor;
+    public ExecutorService executor;
     public Controller(IRepository repo) {
         this.repo = repo;
     }
@@ -41,6 +41,7 @@ public class Controller {
                 })
                 .collect(Collectors.toList());
     }
+
     // Recursively collects addresses referenced in the heap
     List<Integer> getAddrFromHeap(Map<Integer, IValue> heap, List<Integer> symTableAddr) {
         List<Integer> addresses = symTableAddr;
@@ -72,7 +73,7 @@ public class Controller {
                 .collect(Collectors.toList());
     }
 
-    void oneStepForAllPrg(List <PrgState> prgList) throws InterruptedException {
+    public void oneStepForAllPrg(List <PrgState> prgList) throws InterruptedException {
         prgList.forEach(prg->repo.logPrgStateExec(prg));
 
         List<Callable<PrgState>> callList = prgList.stream().
@@ -98,7 +99,7 @@ public class Controller {
 
     }
 
-    Map<Integer, IValue> conservativeGarbageCollector(List<PrgState> prgStates){
+    public Map<Integer, IValue> conservativeGarbageCollector(List<PrgState> prgStates){
         // collect all addr from the sym tables of all prg states
         List<Integer> symTableAddr = prgStates.stream()
                 .flatMap(p->getAddrFromSymTable(p.getSymTable().getContent().values()).stream())

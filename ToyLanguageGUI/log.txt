@@ -1,3 +1,2047 @@
+Program ID: 2
+Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+v=32
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+v=32
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+v=32
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+v=32
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+v=32
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+v=32
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+v=32
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+v=32
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 3
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
 Program ID: 1
 Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
 
@@ -226,295 +2270,6 @@ Heap contains: 1 -> 22
 Program ID: 2
 Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
 
-Dictionary contains: a -> null
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 2
-Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> null
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: print(ReadHeap(a))
-print(v)
-
-Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 2
-Stack contains: v=32;print(v);print(ReadHeap(a))
-WriteHeap(a,30)
-
-Dictionary contains: a -> null
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: print(ReadHeap(a))
-print(v)
-
-Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 2
-Stack contains: v=32;print(v);print(ReadHeap(a))
-WriteHeap(a,30)
-
-Dictionary contains: a -> null
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: 
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-int v
-
-Dictionary contains: 
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-int v
-
-Dictionary contains: 
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-Ref(int) a
-
-Dictionary contains: v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-Ref(int) a
-
-Dictionary contains: v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (0, int)
-v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (0, int)
-v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-v=10
-
-Dictionary contains: a -> (0, int)
-v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-v=10
-
-Dictionary contains: a -> (0, int)
-v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (0, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (0, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-new(a, 22)
-
-Dictionary contains: a -> (0, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-new(a, 22)
-
-Dictionary contains: a -> (0, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: print(v);print(ReadHeap(a))
-fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
-
-Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: print(v);print(ReadHeap(a))
-fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
-
 Dictionary contains: a -> (1, int)
 v -> 10
 
@@ -539,31 +2294,7 @@ Heap contains: 1 -> 22
 Program ID: 2
 Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
 
-Dictionary contains: a -> null
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: print(v);print(ReadHeap(a))
-
 Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 2
-Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> null
 v -> 10
 
 List contains: 
@@ -589,7 +2320,7 @@ Program ID: 2
 Stack contains: v=32;print(v);print(ReadHeap(a))
 WriteHeap(a,30)
 
-Dictionary contains: a -> null
+Dictionary contains: a -> (1, int)
 v -> 10
 
 List contains: 
@@ -615,268 +2346,7 @@ Program ID: 2
 Stack contains: v=32;print(v);print(ReadHeap(a))
 WriteHeap(a,30)
 
-Dictionary contains: a -> null
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: 
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-int v
-
-Dictionary contains: 
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-int v
-
-Dictionary contains: 
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-Ref(int) a
-
-Dictionary contains: v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-Ref(int) a
-
-Dictionary contains: v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (0, int)
-v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (0, int)
-v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-v=10
-
-Dictionary contains: a -> (0, int)
-v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-v=10
-
-Dictionary contains: a -> (0, int)
-v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (0, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (0, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-new(a, 22)
-
-Dictionary contains: a -> (0, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-new(a, 22)
-
-Dictionary contains: a -> (0, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
 Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: print(v);print(ReadHeap(a))
-fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
-
-Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: print(v);print(ReadHeap(a))
-fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
-
-Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 2
-Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> null
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 2
-Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> null
 v -> 10
 
 List contains: 
@@ -887,367 +2357,200 @@ Heap contains: 1 -> 22
 
 Program ID: 1
 Stack contains: print(ReadHeap(a))
-print(v)
 
 Dictionary contains: a -> (1, int)
 v -> 10
 
-List contains: 
+List contains: 10
+
 FileTable: 
 
-Heap contains: 1 -> 22
+Heap contains: 1 -> 30
 
 
 Program ID: 2
 Stack contains: v=32;print(v);print(ReadHeap(a))
-WriteHeap(a,30)
 
-Dictionary contains: a -> null
+Dictionary contains: a -> (1, int)
 v -> 10
 
-List contains: 
+List contains: 10
+
 FileTable: 
 
-Heap contains: 1 -> 22
+Heap contains: 1 -> 30
 
 
 Program ID: 1
 Stack contains: print(ReadHeap(a))
-print(v)
 
 Dictionary contains: a -> (1, int)
 v -> 10
 
-List contains: 
+List contains: 10
+
 FileTable: 
 
-Heap contains: 1 -> 22
+Heap contains: 1 -> 30
 
 
 Program ID: 2
 Stack contains: v=32;print(v);print(ReadHeap(a))
-WriteHeap(a,30)
-
-Dictionary contains: a -> null
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: 
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-int v
-
-Dictionary contains: 
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-int v
-
-Dictionary contains: 
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-Ref(int) a
-
-Dictionary contains: v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-Ref(int) a
-
-Dictionary contains: v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (0, int)
-v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (0, int)
-v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-v=10
-
-Dictionary contains: a -> (0, int)
-v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-v=10
-
-Dictionary contains: a -> (0, int)
-v -> 0
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (0, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (0, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-new(a, 22)
-
-Dictionary contains: a -> (0, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-new(a, 22)
-
-Dictionary contains: a -> (0, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 
-
-Program ID: 1
-Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
 
 Dictionary contains: a -> (1, int)
 v -> 10
 
-List contains: 
+List contains: 10
+
 FileTable: 
 
-Heap contains: 1 -> 22
+Heap contains: 1 -> 30
 
 
 Program ID: 1
-Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
-
+Stack contains: 
 Dictionary contains: a -> (1, int)
 v -> 10
 
-List contains: 
+List contains: 10
+30
+
 FileTable: 
 
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: print(v);print(ReadHeap(a))
-fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
-
-Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: print(v);print(ReadHeap(a))
-fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
-
-Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
-Stack contains: print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> (1, int)
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
+Heap contains: 1 -> 30
 
 
 Program ID: 2
-Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
-
-Dictionary contains: a -> null
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
 Stack contains: print(v);print(ReadHeap(a))
+v=32
 
 Dictionary contains: a -> (1, int)
 v -> 10
 
-List contains: 
+List contains: 10
+30
+
 FileTable: 
 
-Heap contains: 1 -> 22
+Heap contains: 1 -> 30
 
 
 Program ID: 2
-Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
+Stack contains: print(v);print(ReadHeap(a))
+v=32
 
-Dictionary contains: a -> null
+Dictionary contains: a -> (1, int)
 v -> 10
 
-List contains: 
+List contains: 10
+30
+
 FileTable: 
 
-Heap contains: 1 -> 22
+Heap contains: 1 -> 30
 
 
-Program ID: 1
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
 Stack contains: print(ReadHeap(a))
 print(v)
 
 Dictionary contains: a -> (1, int)
-v -> 10
+v -> 32
 
-List contains: 
+List contains: 10
+30
+
 FileTable: 
 
-Heap contains: 1 -> 22
+Heap contains: 1 -> 30
 
 
 Program ID: 2
-Stack contains: v=32;print(v);print(ReadHeap(a))
-WriteHeap(a,30)
-
-Dictionary contains: a -> null
-v -> 10
-
-List contains: 
-FileTable: 
-
-Heap contains: 1 -> 22
-
-
-Program ID: 1
 Stack contains: print(ReadHeap(a))
 print(v)
 
 Dictionary contains: a -> (1, int)
-v -> 10
+v -> 32
 
-List contains: 
+List contains: 10
+30
+
 FileTable: 
 
-Heap contains: 1 -> 22
+Heap contains: 1 -> 30
 
 
 Program ID: 2
-Stack contains: v=32;print(v);print(ReadHeap(a))
-WriteHeap(a,30)
+Stack contains: print(ReadHeap(a))
 
-Dictionary contains: a -> null
-v -> 10
+Dictionary contains: a -> (1, int)
+v -> 32
 
-List contains: 
+List contains: 10
+30
+32
+
 FileTable: 
 
-Heap contains: 1 -> 22
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
 
 
 Program ID: 1
@@ -2612,6 +3915,345 @@ Heap contains: 1 -> 30
 
 
 Program ID: 1
+Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a)))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);print(ReadHeap(a))
+WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);print(ReadHeap(a))
+WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: v=32;print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 1
 Stack contains: print(ReadHeap(a))
 
 Dictionary contains: a -> (1, int)
@@ -2777,6 +4419,4173 @@ List contains: 10
 30
 32
 30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 1
+Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);print(ReadHeap(a));int w
+WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);print(ReadHeap(a));int w
+WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: v=32;print(v);print(ReadHeap(a));int w
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: v=32;print(v);print(ReadHeap(a));int w
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 1
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a));int w
+v=32
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a));int w
+v=32
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a));int w
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a));int w
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));int w
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 1
+Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w);print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30);v=32;print(v);print(ReadHeap(a));int w
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);print(ReadHeap(a));int w
+WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);print(ReadHeap(a));int w
+WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: v=32;print(v);print(ReadHeap(a));int w
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: v=32;print(v);print(ReadHeap(a));int w
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 1
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a));int w
+v=32
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a));int w
+v=32
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a));int w
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(v);print(ReadHeap(a));int w
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));int w
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));int w
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));int w
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));int w
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: int w
+print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: int w
+print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: int w
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: int w
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+30
+32
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 2
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 32
+w -> 0
+
+List contains: 10
+30
+32
+30
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 1
+Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(print(ReadHeap(a));v=32;print(v);WriteHeap(a,30))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+v=32
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+v=32
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+22
+22
+32
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+22
+22
+32
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 32
+
+List contains: 10
+22
+22
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 1
+Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+int c
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+int c
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+v=32
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+v=32
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+print(v)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+print(v)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+32
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+32
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: 
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 1
+Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+int c
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+int c
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+int c
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+int c
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+v=32
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+v=32
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+int c
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+int c
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+v=32
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+v=32
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+print(v)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+print(v)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+32
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+32
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: 
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+32
+
+FileTable: 
+
+Heap contains: 1 -> 30
+
+
+Program ID: 1
+Stack contains: int v;Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+int v
+
+Dictionary contains: 
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: Ref(int) a;v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+Ref(int) a
+
+Dictionary contains: v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: v=10;new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+v=10
+
+Dictionary contains: a -> (0, int)
+v -> 0
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: new(a, 22);fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+new(a, 22)
+
+Dictionary contains: a -> (0, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30));print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+fork(int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(v);print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: int c;print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+int c
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+print(v)
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+int c
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(ReadHeap(a));v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 1
+Stack contains: 
+Dictionary contains: a -> (1, int)
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+print(ReadHeap(a))
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: v=32;print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+v=32
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+v=32
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 10
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: print(v);WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+print(v)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+print(v)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+32
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: WriteHeap(a,30)
+
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+32
+
+FileTable: 
+
+Heap contains: 1 -> 22
+
+
+Program ID: 2
+Stack contains: 
+Dictionary contains: a -> (1, int)
+c -> 0
+v -> 32
+
+List contains: 10
+22
+22
+32
 
 FileTable: 
 

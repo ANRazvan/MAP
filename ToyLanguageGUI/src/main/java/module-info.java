@@ -1,8 +1,8 @@
-module com.example.toylanguagegui {
+module gui {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.toylanguagegui to javafx.fxml;
-    exports com.example.toylanguagegui;
+    opens gui to javafx.fxml;
+    exports gui;
 }

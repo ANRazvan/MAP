@@ -210,30 +210,30 @@ FileTable:
 
 Heap contains: 1 -> 30
          */
-        IStmt s1 = new VarDeclStmt("v", new IntType());
-        IStmt s2 = new VarDeclStmt("a", new RefType(new IntType()));
-        IStmt s3 = new AssignStmt("v", new ValueExp(new IntValue(10)));
-        IStmt s4 = new HeapAllocStmt("a", new ValueExp(new IntValue(22)));
-        IStmt s6 = new WriteHeapStmt("a", new ValueExp(new IntValue(30)));
-        IStmt s7 = new AssignStmt("v", new ValueExp(new IntValue(32)));
-        IStmt s8 = new PrintStmt(new VarExp("v"));
-        IStmt s9 = new PrintStmt(new ReadHeapExp(new VarExp("a")));
-        IStmt s5 = new CompStmt(s6, new CompStmt(s7, new CompStmt(s8, s9)));
-        IStmt s10 = new PrintStmt(new VarExp("v"));
-        IStmt s11 = new PrintStmt(new ReadHeapExp(new VarExp("a")));
-        IStmt ex6 = new CompStmt(s1, new CompStmt(s2, new CompStmt(s3, new CompStmt(s4, new CompStmt(new ForkStmt(s5), new CompStmt(s10, s11))))));
-        MyIMap<String, IType> typeEnv = new MyMap<String,IType>();
-        try {
-            ex6.typecheck(typeEnv);
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            return;
-        }
-        System.out.println("Finished typechecking");
-
-        PrgState prgState6 = new PrgState(ex6,new MyStack<IStmt>(), new MyMap<String, IValue>(), new MyList<IValue>(),  new MyMap<StringValue, BufferedReader>(), new MyHeap());
-        IRepository repository6 = new Repository(prgState6, logFilePath);
-        Controller ctr6 = new Controller(repository6);
+//        IStmt s1 = new VarDeclStmt("v", new IntType());
+//        IStmt s2 = new VarDeclStmt("a", new RefType(new IntType()));
+//        IStmt s3 = new AssignStmt("v", new ValueExp(new IntValue(10)));
+//        IStmt s4 = new HeapAllocStmt("a", new ValueExp(new IntValue(22)));
+//        IStmt s6 = new WriteHeapStmt("a", new ValueExp(new IntValue(30)));
+//        IStmt s7 = new AssignStmt("v", new ValueExp(new IntValue(32)));
+//        IStmt s8 = new PrintStmt(new VarExp("v"));
+//        IStmt s9 = new PrintStmt(new ReadHeapExp(new VarExp("a")));
+//        IStmt s5 = new CompStmt(s6, new CompStmt(s7, new CompStmt(s8, s9)));
+//        IStmt s10 = new PrintStmt(new VarExp("v"));
+//        IStmt s11 = new PrintStmt(new ReadHeapExp(new VarExp("a")));
+//        IStmt ex6 = new CompStmt(s1, new CompStmt(s2, new CompStmt(s3, new CompStmt(s4, new CompStmt(new ForkStmt(s5), new CompStmt(s10, s11))))));
+//        MyIMap<String, IType> typeEnv = new MyMap<String,IType>();
+//        try {
+//            ex6.typecheck(typeEnv);
+//        } catch (Exception e) {
+//            System.out.println(e.getMessage());
+//            return;
+//        }
+//        System.out.println("Finished typechecking");
+//
+//        PrgState prgState6 = new PrgState(ex6,new MyStack<IStmt>(), new MyMap<String, IValue>(), new MyList<IValue>(),  new MyMap<StringValue, BufferedReader>(), new MyHeap());
+//        IRepository repository6 = new Repository(prgState6, logFilePath);
+//        Controller ctr6 = new Controller(repository6);
 
 
 
@@ -246,7 +246,7 @@ Heap contains: 1 -> 30
         menu.addCommand(new RunExample("3",ex3.toString(),ctr3));
         menu.addCommand(new RunExample("4",ex4.toString(),ctr4));
         menu.addCommand(new RunExample("5",ex5.toString(),ctr5));*/
-        menu.addCommand(new RunExample("1",ex6.toString(),ctr6));
+//        menu.addCommand(new RunExample("1",ex6.toString(),ctr6));
         menu.show();
     }
 }
