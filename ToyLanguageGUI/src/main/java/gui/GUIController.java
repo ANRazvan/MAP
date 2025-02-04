@@ -7,13 +7,17 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.util.Pair;
 import model.adt.*;
+import model.expressions.ArithExp;
+import model.expressions.VarExp;
 import model.state.PrgState;
 import model.statements.*;
+import model.type.IntType;
 import model.value.IValue;
 import model.value.StringValue;
 import repository.IRepository;
 import repository.Repository;
 import java.io.BufferedReader;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executors;
@@ -57,6 +61,15 @@ public class GUIController {
     private ListView<Integer> prgStateListView;
 
     @FXML
+    private TableView<Pair<String, String>> ProcedureTableView;
+
+    @FXML
+    private TableColumn<Pair<String, String>, String> SignatureCol;
+
+    @FXML
+    private TableColumn<Pair<String, String>, String> BodyCol;
+
+    @FXML
     private Button runButton;
 
     @FXML
@@ -64,11 +77,29 @@ public class GUIController {
 
     private Controller controller;
     private Repository repo;
+    private MyIProcedureTable procedureTable = new MyProcedureTable();
 
     public void initializeExecution(IStmt program) {
-       PrgState prgState = new PrgState(program, new MyStack<>(), new MyMap<>(), new MyList<>(), new MyMap<>(), new MyHeap(), new MyLockTable());
-       repo = new Repository(prgState, "log.txt");
-       controller = new Controller(repo);
+        IStmt f1 = new CompStmt(
+                new VarDeclStmt("v", new IntType()),
+                new CompStmt(
+                        new AssignStmt("v", new ArithExp('+', new VarExp("a"), new VarExp("b"))),
+                        new PrintStmt(new VarExp("v"))
+                )
+        );
+        IStmt f2 = new CompStmt(
+                new VarDeclStmt("v", new IntType()),
+                new CompStmt(
+                        new AssignStmt("v", new ArithExp('*', new VarExp("a"), new VarExp("b"))),
+                        new PrintStmt(new VarExp("v"))
+                )
+        );
+
+        procedureTable.insert("sum", new Pair<>(Arrays.asList("a", "b"), f1));
+        procedureTable.insert("product", new Pair<>(Arrays.asList("a", "b"), f2));
+        PrgState prgState = new PrgState(program, new MyStack<>(), new MyMap<>(), new MyList<>(), new MyMap<>(), new MyHeap(), new MyLockTable(), procedureTable);
+        repo = new Repository(prgState, "log.txt");
+        controller = new Controller(repo);
 
         prgStateListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
@@ -79,8 +110,8 @@ public class GUIController {
                 }
             }
         });
-
-       updateGUI();
+        updateProcedureTable();
+        updateGUI();
     }
 
 
@@ -142,6 +173,33 @@ public class GUIController {
         List<PrgState> prgStates = repo.getPrgList();
         return prgStates.stream().filter(prgState -> prgState.getId() == currentSelection).findFirst().orElse(null);
     }
+
+    private void updateProcedureTable() {
+        ObservableList<Pair<String, String>> procedureTableItems = FXCollections.observableArrayList(
+                procedureTable.getContent().entrySet().stream()
+                        .map(entry -> {
+                            String functionName = entry.getKey();
+                            List<String> parameters = entry.getValue().getKey();
+                            IStmt functionBody = entry.getValue().getValue();
+
+                            // Format: functionName(param1, param2, ...)
+                            String signature = functionName + "(" + String.join(", ", parameters) + ")";
+
+                            // Convert function body to string representation
+                            String body = functionBody.toString();
+
+                            return new Pair<>(signature, body);
+                        })
+                        .collect(Collectors.toList())
+        );
+
+        // Bind Procedure Table columns
+        SignatureCol.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getKey()));
+        BodyCol.setCellValueFactory(data -> new SimpleStringProperty(data.getValue().getValue()));
+
+        ProcedureTableView.setItems(procedureTableItems);
+    }
+
 
     private void updateLockTable(PrgState prgState) {
         ObservableList<Pair<Integer, Integer>> lockTableItems = FXCollections.observableArrayList(

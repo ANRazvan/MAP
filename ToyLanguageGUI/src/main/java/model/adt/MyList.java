@@ -19,6 +19,11 @@ public class MyList<T> implements MyIList<T>{
     }
 
     @Override
+    public T get(int index) {
+        return this.list.get(index);
+    }
+
+    @Override
     public List<T> getAll() {
         return this.list;
     }
@@ -35,5 +40,10 @@ public class MyList<T> implements MyIList<T>{
 
         return "List contains: " + string.toString();
 
+    }
+
+    @Override
+    public int size() {
+        return this.list.size();
     }
 }

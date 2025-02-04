@@ -25,6 +25,14 @@ public class MyStack<T> implements MyIStack<T> {
     }
 
     @Override
+    public T peek() throws EmptyStackException {
+        if(stack.isEmpty()){
+            throw new EmptyStackException("Stack is empty\n");
+        }
+        return this.stack.peek();
+    }
+
+    @Override
     public boolean isEmpty() {
         return this.stack.isEmpty();
     }

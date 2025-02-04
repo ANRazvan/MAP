@@ -11,4 +11,5 @@ public interface MyIStack<T> {
     int size();
     public List<T> getContentAsList();
 
+    T peek();
 }

@@ -213,7 +213,24 @@ The final Out should be {190 or 199,350 or 305}
 
         programExamples.add(mainru);
 
+        /*
+        v=2;w=5;call sum(v*10,w);print(v);
+ fork(call product(v,w);
+ fork(call sum(v,w)))
+ The final Out should be {25,2,10,7}
 
+
+         */
+        IStmt call1 = new VarDeclStmt("v", new IntType());
+        IStmt call2 = new AssignStmt("v", new ValueExp(new IntValue(2)));
+        IStmt call3 = new VarDeclStmt("w", new IntType());
+        IStmt call4 = new AssignStmt("w", new ValueExp(new IntValue(5)));
+        IStmt call5 = new CallStmt("sum",List.of(new ArithExp('*',new VarExp("v"),new ValueExp(new IntValue(10))),new VarExp("w")));
+        IStmt call6 = new PrintStmt(new VarExp("v"));
+        IStmt call7 = new ForkStmt(new CompStmt(new CallStmt("product",List.of(new VarExp("v"),new VarExp("w"))),new ForkStmt(new CallStmt("sum",List.of(new VarExp("v"),new VarExp("w"))))));
+        IStmt callstmt =new CompStmt(call1,new CompStmt(call2,new CompStmt(call3,new CompStmt(call4,new CompStmt(call5, new CompStmt(call6, call7))))));
+
+        programExamples.add(callstmt);
         return programExamples;
     }
 

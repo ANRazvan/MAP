@@ -7,16 +7,18 @@ import model.value.IValue;
 import model.value.StringValue;
 
 import java.io.BufferedReader;
-import java.util.concurrent.locks.Lock;
 
 public class    PrgState {
     private MyIStack<IStmt> execStack;
-    private MyIMap<String, IValue> symTable;
+//    private MyIMap<String, IValue> symTable;
+    private MyIStack<MyIMap<String,IValue>> symTables;
     private MyIList<IValue> outputList;
     private MyIMap<StringValue, BufferedReader> fileTable;
     private MyIHeap heap;
     private MyILockTable LockTable;
+    private MyIProcedureTable procedureTable;
     private static int id = 0;
+    private IStmt originalProgram;
 
     // Static synchronized method to get the next id
     public static synchronized int getNextId() {
@@ -26,16 +28,31 @@ public class    PrgState {
     private final int programId; // Instance-specific id
 
     public PrgState(IStmt initState, MyIStack<IStmt> execStack, MyIMap<String, IValue> symTable,
-                    MyIList<IValue> output, MyIMap<StringValue,BufferedReader> fileTable, MyIHeap heap, MyILockTable locktable) {
+                    MyIList<IValue> output, MyIMap<StringValue,BufferedReader> fileTable, MyIHeap heap, MyILockTable locktable, MyIProcedureTable proceduretable) {
         this.execStack = execStack;
-        this.symTable = symTable;
+        this.symTables = new MySymTableStack();
+        this.symTables.push(symTable);
         this.outputList = output;
         execStack.push(initState);
         this.fileTable= fileTable;
         this.heap = heap;
-
         this.programId = getNextId();
         this.LockTable=locktable;
+        this.procedureTable = proceduretable;
+        //init();
+    }
+
+    public PrgState(IStmt initState, MyIStack<IStmt> execStack, MyIStack<MyIMap<String,IValue>> symTables,
+                    MyIList<IValue> output, MyIMap<StringValue,BufferedReader> fileTable, MyIHeap heap, MyILockTable locktable, MyIProcedureTable proceduretable) {
+        this.execStack = execStack;
+        this.symTables = symTables;
+        this.outputList = output;
+        execStack.push(initState);
+        this.fileTable= fileTable;
+        this.heap = heap;
+        this.programId = getNextId();
+        this.LockTable=locktable;
+        this.procedureTable = proceduretable;
         //init();
     }
 
@@ -60,22 +77,28 @@ public class    PrgState {
     public MyIStack<IStmt> getExecStack() {
         return execStack;
     }
+//    public MyIMap<String, IValue> getSymTable() {
+//        return symTable;
+//    }
+
     public MyIMap<String, IValue> getSymTable() {
-        return symTable;
+        return symTables.peek();
     }
     public MyIList<IValue> getOutputList() {
         return outputList;
     }
 
-    public void init(){
-        this.execStack = new MyStack<IStmt>();
-        this.symTable = new MyMap<String,IValue>();
-        this.outputList = new MyList<IValue>();
+    public MyIStack<MyIMap<String,IValue>> getAllSymTables() {
+        return symTables;
+    }
+
+    public MySymTableStack getSymTableStack(){
+        return (MySymTableStack) this.symTables;
     }
 
     @Override
     public String toString() {
-        return "Program ID: " + programId + "\n" + execStack.toString() + "\n" + symTable.toString() + "\n"
+        return "Program ID: " + programId + "\n" + execStack.toString() + "\n" + symTables.toString() + "\n"
                 + outputList.toString() + "\n" + fileTableToString() + "\n" + heap.toString() + "\n";
     }
 
@@ -105,7 +128,16 @@ public class    PrgState {
         return LockTable;
     }
 
+    public MyIProcedureTable getProcedureTable() {
+        return procedureTable;
+    }
+
     public void setLockTable(MyILockTable lockTable) {
         LockTable.setContent(lockTable.getContent());
     }
+
+    public void setProcedureTable(MyIProcedureTable procedureTable) {
+        this.procedureTable=procedureTable;
+    }
 }
+

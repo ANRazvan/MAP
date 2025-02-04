@@ -1,7 +1,10 @@
 package model.adt;
 
 import exceptions.ExpressionException;
+import javafx.util.Pair;
+import model.statements.IStmt;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
