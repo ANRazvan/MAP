@@ -19,7 +19,8 @@ public class ForkStmt implements IStmt{
     public PrgState execute(PrgState state) throws StatementException, ExpressionException {
             MyIStack<IStmt> newStack = new MyStack<IStmt>();
             MyIMap<String, IValue> newSymTable = state.getSymTable().clone();
-            return new PrgState(statement,newStack, newSymTable, state.getOutputList(), state.getFileTable(), state.getHeap());
+            MyILockTable newLockTable = state.getLockTable();
+            return new PrgState(statement,newStack, newSymTable, state.getOutputList(), state.getFileTable(), state.getHeap(),newLockTable);
     }
 
     @Override

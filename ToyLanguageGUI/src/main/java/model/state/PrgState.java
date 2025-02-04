@@ -7,6 +7,7 @@ import model.value.IValue;
 import model.value.StringValue;
 
 import java.io.BufferedReader;
+import java.util.concurrent.locks.Lock;
 
 public class    PrgState {
     private MyIStack<IStmt> execStack;
@@ -14,6 +15,7 @@ public class    PrgState {
     private MyIList<IValue> outputList;
     private MyIMap<StringValue, BufferedReader> fileTable;
     private MyIHeap heap;
+    private MyILockTable LockTable;
     private static int id = 0;
 
     // Static synchronized method to get the next id
@@ -24,7 +26,7 @@ public class    PrgState {
     private final int programId; // Instance-specific id
 
     public PrgState(IStmt initState, MyIStack<IStmt> execStack, MyIMap<String, IValue> symTable,
-                    MyIList<IValue> output, MyIMap<StringValue,BufferedReader> fileTable, MyIHeap heap) {
+                    MyIList<IValue> output, MyIMap<StringValue,BufferedReader> fileTable, MyIHeap heap, MyILockTable locktable) {
         this.execStack = execStack;
         this.symTable = symTable;
         this.outputList = output;
@@ -33,6 +35,7 @@ public class    PrgState {
         this.heap = heap;
 
         this.programId = getNextId();
+        this.LockTable=locktable;
         //init();
     }
 
@@ -96,5 +99,13 @@ public class    PrgState {
 
     public Integer getId() {
         return programId;
+    }
+
+    public MyILockTable getLockTable() {
+        return LockTable;
+    }
+
+    public void setLockTable(MyILockTable lockTable) {
+        LockTable.setContent(lockTable.getContent());
     }
 }

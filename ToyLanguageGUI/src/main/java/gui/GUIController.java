@@ -34,6 +34,13 @@ public class GUIController {
     private TableColumn<Pair<Integer, String>, String> heapValueCol;
 
     @FXML
+    private TableView<Pair<Integer, Integer>> LockTableView;
+    @FXML
+    private TableColumn<Pair<Integer, String>, String> LocationCol;
+    @FXML
+    private TableColumn<Pair<Integer, String>, String> ValueCol;
+
+    @FXML
     private TableView<Pair<String, String>> symTableView;
     @FXML
     private TableColumn<Pair<String, String>, String> symVarNameCol;
@@ -59,7 +66,7 @@ public class GUIController {
     private Repository repo;
 
     public void initializeExecution(IStmt program) {
-       PrgState prgState = new PrgState(program, new MyStack<>(), new MyMap<>(), new MyList<>(), new MyMap<>(), new MyHeap());
+       PrgState prgState = new PrgState(program, new MyStack<>(), new MyMap<>(), new MyList<>(), new MyMap<>(), new MyHeap(), new MyLockTable());
        repo = new Repository(prgState, "log.txt");
        controller = new Controller(repo);
 
@@ -88,11 +95,11 @@ public class GUIController {
 
             }
             // Call conservative garbage collector
-            Map<Integer, IValue> heap = controller.conservativeGarbageCollector(prgList);
+            prgList.forEach(prg -> prg.getHeap().setContent(
+                    controller.conservativeGarbageCollector(prgList)
+            ));
             controller.oneStepForAllPrg(prgList);
-            prgList = controller.removeCompletedPrg(repo.getPrgList());
             controller.executor.shutdownNow();
-            repo.setPrgList(prgList);
             updateGUI();
         }
         catch(Exception e){
@@ -103,7 +110,7 @@ public class GUIController {
     }
 
     private void updateGUI() {
-        List<PrgState> prgStates = repo.getPrgList();
+        List<PrgState> prgStates = controller.getRepo().getPrgList();
         numPrgStatesTextField.setText(String.valueOf(prgStates.size()));
         if(prgStates.isEmpty()){
             exeStackListView.getItems().clear();
@@ -120,6 +127,7 @@ public class GUIController {
             prgStateListView.getSelectionModel().select(0);
         }
         PrgState selectedPrgState = getCurrentPrgState();
+        updateLockTable(selectedPrgState);
         updateHeapTable(selectedPrgState);
         updateSymTable(selectedPrgState); // Assume one PrgState for simplicity
         updateExeStack(selectedPrgState);
@@ -133,6 +141,18 @@ public class GUIController {
         }
         List<PrgState> prgStates = repo.getPrgList();
         return prgStates.stream().filter(prgState -> prgState.getId() == currentSelection).findFirst().orElse(null);
+    }
+
+    private void updateLockTable(PrgState prgState) {
+        ObservableList<Pair<Integer, Integer>> lockTableItems = FXCollections.observableArrayList(
+                prgState.getLockTable().getContent().entrySet().stream()
+                        .map(entry -> new Pair<>(entry.getKey(), entry.getValue()))
+                        .collect(Collectors.toList())
+        );
+        // Bind Lock Table columns
+        LocationCol.setCellValueFactory(data -> new SimpleStringProperty(String.valueOf(data.getValue().getKey())));
+        ValueCol.setCellValueFactory(data -> new SimpleStringProperty(String.valueOf(data.getValue().getValue())));
+        LockTableView.setItems(lockTableItems);
     }
 
     private void updateHeapTable(PrgState prgState) {

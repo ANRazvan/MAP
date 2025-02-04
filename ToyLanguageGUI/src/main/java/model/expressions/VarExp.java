@@ -26,7 +26,6 @@ public class VarExp implements IExpression{
 
     @Override
     public IValue evaluate(MyIMap<String, IValue> symTbl, MyIHeap heap) throws ExpressionException {
-
         return symTbl.lookup(this.variable);
     }
     @Override

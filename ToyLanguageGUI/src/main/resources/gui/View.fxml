@@ -17,6 +17,20 @@
                              <Button id="runButton" onAction="#handleRunOneStep" text="Run One Step" />
                          </children>
                       </VBox>
+                  <VBox spacing="10">
+                     <children>
+                        <Label text="LockTable" />
+                        <TableView id="LockTableView" fx:id="LockTableView" prefHeight="186.0" prefWidth="190.0">
+                           <columns>
+                              <TableColumn id="LocationCol" fx:id="LocationCol" text="Location" />
+                              <TableColumn id="ValueCol" fx:id="ValueCol" text="Value" />
+                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </VBox>
                   </children>
                </HBox>
                <SplitPane dividerPositions="0.42913385826771655, 0.6430446194225722" orientation="HORIZONTAL" prefHeight="219.0" prefWidth="764.0">
@@ -24,7 +38,7 @@
                       <VBox spacing="10">
                          <children>
                              <Label text="Heap Table" />
-                             <TableView id="heapTableView" fx:id="heapTableView">
+                             <TableView id="heapTableView" fx:id="heapTableView" prefHeight="186.0" prefWidth="177.0">
                                  <columns>
                                      <TableColumn id="heapAddressCol" fx:id="heapAddressCol" text="Address" />
                                      <TableColumn id="heapValueCol" fx:id="heapValueCol" text="Value" />
@@ -35,13 +49,13 @@
                       <VBox spacing="10">
                          <children>
                              <Label text="Out" />
-                             <ListView id="outputListView" fx:id="outputListView" />
+                             <ListView id="outputListView" fx:id="outputListView" prefHeight="186.0" prefWidth="242.0" />
                          </children>
                       </VBox>
                       <VBox spacing="10">
                          <children>
                              <Label text="File Table" />
-                             <ListView id="fileTableListView" fx:id="fileTableListView" />
+                             <ListView id="fileTableListView" fx:id="fileTableListView" prefHeight="186.0" prefWidth="400.0" />
                          </children>
                       </VBox>
                   </items>
@@ -68,7 +82,7 @@
                       <VBox spacing="10">
                          <children>
                              <Label text="ExeStack" />
-                             <ListView id="exeStackListView" fx:id="exeStackListView" />
+                             <ListView id="exeStackListView" fx:id="exeStackListView" prefHeight="271.0" prefWidth="250.0" />
                          </children>
                       </VBox>
                   </children>
