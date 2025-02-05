@@ -95,8 +95,8 @@ public class GUIController {
                 )
         );
 
-        procedureTable.insert("sum", new Pair<>(Arrays.asList("a", "b"), f1));
-        procedureTable.insert("product", new Pair<>(Arrays.asList("a", "b"), f2));
+//        procedureTable.insert("sum", new Pair<>(Arrays.asList("a", "b"), f1));
+//        procedureTable.insert("product", new Pair<>(Arrays.asList("a", "b"), f2));
         PrgState prgState = new PrgState(program, new MyStack<>(), new MyMap<>(), new MyList<>(), new MyMap<>(), new MyHeap(), new MyLockTable(), procedureTable);
         repo = new Repository(prgState, "log.txt");
         controller = new Controller(repo);

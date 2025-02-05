@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GUIController">
     <children>
-        <VBox spacing="10" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <VBox spacing="10" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
            <children>
-               <HBox spacing="10">
+               <HBox alignment="TOP_CENTER" spacing="10" VBox.vgrow="ALWAYS">
                   <children>
-                      <VBox spacing="10">
+                      <VBox alignment="CENTER" spacing="10" HBox.hgrow="ALWAYS">
                          <children>
                              <Label text="Number of PrgStates" />
                              <TextField id="numPrgStatesTextField" fx:id="numPrgStatesTextField" editable="false" />
-                             <Button id="runButton" onAction="#handleRunOneStep" text="Run One Step" />
+                             <Button id="runButton" onAction="#handleRunOneStep" text="Run One Step" textAlignment="CENTER" />
                          </children>
                       </VBox>
-                  <VBox spacing="10">
+                  <VBox alignment="CENTER" spacing="10" HBox.hgrow="ALWAYS">
                      <children>
                         <Label text="Lock Table" />
                         <TableView id="LockTableView" fx:id="LockTableView" prefHeight="186.0" prefWidth="190.0">
@@ -31,10 +32,10 @@
                         </TableView>
                      </children>
                   </VBox>
-                  <VBox spacing="10">
+                  <VBox alignment="CENTER" spacing="10" HBox.hgrow="ALWAYS">
                      <children>
                         <Label text="Procedure Table" />
-                        <TableView id="ProcedureTableView" fx:id="ProcedureTableView" prefHeight="186.0" prefWidth="361.0">
+                        <TableView id="ProcedureTableView" fx:id="ProcedureTableView" prefHeight="186.0" prefWidth="361.0" VBox.vgrow="ALWAYS">
                            <columnResizePolicy>
                               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                            </columnResizePolicy>
@@ -47,26 +48,26 @@
                   </VBox>
                   </children>
                </HBox>
-               <SplitPane dividerPositions="0.42913385826771655, 0.6430446194225722" orientation="HORIZONTAL" prefHeight="219.0" prefWidth="764.0">
+               <SplitPane dividerPositions="0.42913385826771655, 0.6430446194225722" orientation="HORIZONTAL" prefHeight="219.0" prefWidth="764.0" VBox.vgrow="ALWAYS">
                   <items>
-                      <VBox spacing="10">
+                      <VBox alignment="CENTER" spacing="10">
                          <children>
                              <Label text="Heap Table" />
-                             <TableView id="heapTableView" fx:id="heapTableView" prefHeight="186.0" prefWidth="177.0">
+                             <TableView id="heapTableView" fx:id="heapTableView" prefHeight="186.0" prefWidth="177.0" VBox.vgrow="ALWAYS">
                                  <columns>
-                                     <TableColumn id="heapAddressCol" fx:id="heapAddressCol" text="Address" />
-                                     <TableColumn id="heapValueCol" fx:id="heapValueCol" text="Value" />
+                                     <TableColumn id="heapAddressCol" fx:id="heapAddressCol" prefWidth="160.0" text="Address" />
+                                     <TableColumn id="heapValueCol" fx:id="heapValueCol" prefWidth="162.0" text="Value" />
                                  </columns>
                              </TableView>
                          </children>
                       </VBox>
-                      <VBox spacing="10">
+                      <VBox alignment="CENTER" spacing="10">
                          <children>
                              <Label text="Out" />
                              <ListView id="outputListView" fx:id="outputListView" prefHeight="186.0" prefWidth="242.0" />
                          </children>
                       </VBox>
-                      <VBox spacing="10">
+                      <VBox alignment="CENTER" spacing="10">
                          <children>
                              <Label text="File Table" />
                              <ListView id="fileTableListView" fx:id="fileTableListView" prefHeight="186.0" prefWidth="400.0" />
@@ -74,26 +75,26 @@
                       </VBox>
                   </items>
                </SplitPane>
-               <HBox prefHeight="311.0" prefWidth="764.0" spacing="10">
+               <HBox alignment="BOTTOM_CENTER" prefHeight="311.0" prefWidth="764.0" spacing="10" VBox.vgrow="ALWAYS">
                   <children>
-                      <VBox spacing="10">
+                      <VBox alignment="CENTER" spacing="10" HBox.hgrow="ALWAYS">
                          <children>
                              <Label text="PrgState Identifiers" />
                              <ListView id="prgStateListView" fx:id="prgStateListView" />
                          </children>
                       </VBox>
-                      <VBox prefHeight="381.0" prefWidth="248.0" spacing="10">
+                      <VBox alignment="CENTER" prefHeight="381.0" prefWidth="248.0" spacing="10" HBox.hgrow="ALWAYS">
                          <children>
                              <Label text="SymTable" />
                              <TableView id="symTableView" fx:id="symTableView">
                                  <columns>
-                                     <TableColumn id="symVarNameCol" fx:id="symVarNameCol" text="Variable Name" />
-                                     <TableColumn id="symValueCol" fx:id="symValueCol" text="Value" />
+                                     <TableColumn id="symVarNameCol" fx:id="symVarNameCol" prefWidth="122.0" text="Variable Name" />
+                                     <TableColumn id="symValueCol" fx:id="symValueCol" prefWidth="124.0" text="Value" />
                                  </columns>
                              </TableView>
                          </children>
                       </VBox>
-                      <VBox spacing="10">
+                      <VBox alignment="CENTER" spacing="10" HBox.hgrow="ALWAYS">
                          <children>
                              <Label text="ExeStack" />
                              <ListView id="exeStackListView" fx:id="exeStackListView" prefHeight="271.0" prefWidth="250.0" />

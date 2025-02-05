@@ -22,17 +22,17 @@ public class NewLockStatement implements IStmt {
 
     @Override
     public PrgState execute(PrgState state) throws InterpreterException {
-        lock.lock();
+        lock.lock(); // making sure we`re not interrupted by other threads
         MyILockTable lockTable = state.getLockTable();
         MyIMap<String, IValue> symTable = state.getSymTable();
-        int freeAddress = lockTable.getFreeValue();
-        lockTable.put(freeAddress, -1);
+        int freeAddress = lockTable.getFreeValue(); // get the next free address from thr locktable in order to create a new lock
+        lockTable.put(freeAddress, -1); // put the new lock in the locktable with the value -1 which means it is unlocked
         if (symTable.contains(var) && symTable.lookup(var).getType().equals(new IntType())) {
             symTable.update(var, new IntValue(freeAddress));
         }
         else
             throw new InterpreterException("Variable not declared!");
-        lock.unlock();
+        lock.unlock(); // release the lock
         return null;
     }
 
@@ -41,7 +41,7 @@ public class NewLockStatement implements IStmt {
         if (typeEnv.lookup(var).equals(new IntType()))
             return typeEnv;
         else
-            throw new InterpreterException("Var is not of int Types!");
+            throw new InterpreterException("Var is not of Type int!");
     }
 
     @Override

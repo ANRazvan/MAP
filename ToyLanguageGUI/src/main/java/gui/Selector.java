@@ -47,27 +47,28 @@ public class Selector {
     // Write the program examples
     private List<IStmt> loadPrograms() {
         List<IStmt> programExamples = new ArrayList<>();
-        IStmt s1 = new VarDeclStmt("v", new IntType());
-        IStmt s2 = new VarDeclStmt("a", new RefType(new IntType()));
-        IStmt s3 = new AssignStmt("v", new ValueExp(new IntValue(10)));
-        IStmt s4 = new HeapAllocStmt("a", new ValueExp(new IntValue(22)));
-        IStmt s6 = new WriteHeapStmt("a", new ValueExp(new IntValue(30)));
-        IStmt s7 = new AssignStmt("v", new ValueExp(new IntValue(32)));
-        IStmt s8 = new PrintStmt(new VarExp("v"));
-        IStmt s9 = new PrintStmt(new ReadHeapExp(new VarExp("a")));
-        IStmt s5 = new CompStmt(s9, new CompStmt(s7, new CompStmt(s8, s6)));
-        IStmt s10 = new PrintStmt(new VarExp("v"));
-        IStmt s11 = new PrintStmt(new ReadHeapExp(new VarExp("a")));
-        IStmt ex1 = new CompStmt(s1, new CompStmt(s2, new CompStmt(s3, new CompStmt(s4, new CompStmt(new ForkStmt(new CompStmt(new VarDeclStmt("c",new IntType()),s5)), new CompStmt(s10, s11))))));
         MyIMap<String, IType> typeEnv = new MyMap<String,IType>();
+
+        //        IStmt s1 = new VarDeclStmt("v", new IntType());
+//        IStmt s2 = new VarDeclStmt("a", new RefType(new IntType()));
+//        IStmt s3 = new AssignStmt("v", new ValueExp(new IntValue(10)));
+//        IStmt s4 = new HeapAllocStmt("a", new ValueExp(new IntValue(22)));
+//        IStmt s6 = new WriteHeapStmt("a", new ValueExp(new IntValue(30)));
+//        IStmt s7 = new AssignStmt("v", new ValueExp(new IntValue(32)));
+//        IStmt s8 = new PrintStmt(new VarExp("v"));
+//        IStmt s9 = new PrintStmt(new ReadHeapExp(new VarExp("a")));
+//        IStmt s5 = new CompStmt(s9, new CompStmt(s7, new CompStmt(s8, s6)));
+//        IStmt s10 = new PrintStmt(new VarExp("v"));
+//        IStmt s11 = new PrintStmt(new ReadHeapExp(new VarExp("a")));
+//        IStmt ex1 = new CompStmt(s1, new CompStmt(s2, new CompStmt(s3, new CompStmt(s4, new CompStmt(new ForkStmt(new CompStmt(new VarDeclStmt("c",new IntType()),s5)), new CompStmt(s10, s11))))));
 //        try {
 //            ex1.typecheck(typeEnv);
 //        } catch (Exception e) {
 //            System.out.println(e.getMessage());
 //            return null;
 //        }
-        System.out.println("Finished typechecking");
-        programExamples.add(ex1);
+//        System.out.println("Finished typechecking");
+//        programExamples.add(ex1);
 
         // an example for a for stmt
         /*
@@ -93,42 +94,30 @@ public class Selector {
         programExamples.add(forstmt);
         try {
             forstmt.typecheck(typeEnv);
-            System.out.println("Finished typechecking ex2");
+            System.out.println("Finished typechecking for");
         } catch (Exception e) {
             System.out.println(e.getMessage());
             return null;
         }
         /*
         Ref int v1; Ref int v2; int x; int q;
-new(v1,20);new(v2,30);newLock(x);
-fork(
- fork(
- lock(x);wh(v1,rh(v1)-1);unlock(x)
- );
- lock(x);wh(v1,rh(v1)*10);unlock(x)
-);newLock(q);
-fork(
- fork(lock(q);wh(v2,rh(v2)+5);unlock(q));
- lock(q);wh(v2,rh(v2)*10);unlock(q)
-);
-nop;nop;nop;nop;
-lock(x); print(rh(v1)); unlock(x);
-lock(q); print(rh(v2)); unlock(q);
-The final Out should be {190 or 199,350 or 305}
-         
+        new(v1,20);new(v2,30);newLock(x);
+        fork(
+         fork(
+         lock(x);wh(v1,rh(v1)-1);unlock(x)
+         );
+         lock(x);wh(v1,rh(v1)*10);unlock(x)
+        );newLock(q);
+        fork(
+         fork(lock(q);wh(v2,rh(v2)+5);unlock(q));
+         lock(q);wh(v2,rh(v2)*10);unlock(q)
+        );
+        nop;nop;nop;nop;
+        lock(x); print(rh(v1)); unlock(x);
+        lock(q); print(rh(v2)); unlock(q);
+        The final Out should be {190 or 199,350 or 305}
 
-        IStmt l1 = new VarDeclStmt("v1", new RefType(new IntType()));
-        IStmt l2 = new VarDeclStmt("v2", new RefType(new IntType()));
-        IStmt l3 = new VarDeclStmt("x", new IntType());
-        IStmt l4 = new VarDeclStmt("q", new IntType());
-        IStmt l5 = new HeapAllocStmt("v1", new ValueExp(new IntValue(20)));
-        IStmt l6 = new HeapAllocStmt("v2", new ValueExp(new IntValue(30)));
-        IStmt l7 = new NewLockStatement("x");
-        IStmt fork2 = new ForkStmt(new ForkStmt(
-                                                new CompStmt(new LockStatement("x"),new CompStmt)
-        )
-        )
-*/
+        */
         IStmt ex13 = new CompStmt(new VarDeclStmt("v1", new RefType(new IntType())),
                 new CompStmt(new VarDeclStmt("v2", new RefType(new IntType())),
                         new CompStmt(new VarDeclStmt("x", new IntType()),
@@ -170,12 +159,12 @@ The final Out should be {190 or 199,350 or 305}
         programExamples.add(ex13);
         try {
             ex13.typecheck(typeEnv);
-            System.out.println("Finished typechecking ex3");
+            System.out.println("Finished typechecking the Lock Statement");
         } catch (Exception e) {
             System.out.println(e.getMessage());
             return null;
         }
-
+        /*
         IStmt switch1 = new VarDeclStmt("a", new IntType());
         IStmt switch2 = new VarDeclStmt("b", new IntType());
         IStmt switch3 = new VarDeclStmt("c", new IntType());
@@ -213,14 +202,12 @@ The final Out should be {190 or 199,350 or 305}
 
         programExamples.add(mainru);
 
+        /*v=2;w=5;call sum(v*10,w);print(v);
+        fork(call product(v,w);
+        fork(call sum(v,w)))
+        The final Out should be {25,2,10,7}
+        */
         /*
-        v=2;w=5;call sum(v*10,w);print(v);
- fork(call product(v,w);
- fork(call sum(v,w)))
- The final Out should be {25,2,10,7}
-
-
-         */
         IStmt call1 = new VarDeclStmt("v", new IntType());
         IStmt call2 = new AssignStmt("v", new ValueExp(new IntValue(2)));
         IStmt call3 = new VarDeclStmt("w", new IntType());
@@ -231,6 +218,8 @@ The final Out should be {190 or 199,350 or 305}
         IStmt callstmt =new CompStmt(call1,new CompStmt(call2,new CompStmt(call3,new CompStmt(call4,new CompStmt(call5, new CompStmt(call6, call7))))));
 
         programExamples.add(callstmt);
+        */
+
         return programExamples;
     }
 
